@@ -156,6 +156,39 @@ export default function Product() {
                                     Almacenar en lugar fresco y seco a temperatura no mayor a 25°C, en un ambiente fresco y ventilado sin exposición directa al sol. Después de abierto refrigerar el producto y mantenerlo en su salmuera.
                                 </td>
                             </tr>
+                            <tr className="bg-white">
+                                <th scope="row" className="border px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                    Vida útil
+                                </th>
+                                <td className="px-6 py-4">
+                                    24 meses desde la fecha de envasado
+                                </td>
+                            </tr>
+                            <tr className="bg-white">
+                                <th scope="row" className="border px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                    Forma de consumo
+                                </th>
+                                <td className="px-6 py-4">
+                                    De consumo directo Desinado para todo tipo de personas
+                                </td>
+                            </tr>
+                            <tr className="bg-white">
+                                <th scope="row" className="border px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                    Rotulado
+                                </th>
+                                <td className="px-6 py-4">
+                                    ✓ Nombre del producto (Nombre científico)
+                                    ✓ Peso Neto
+                                    ✓ Peso Bruto
+                                    ✓ Fecha de envasado
+                                    ✓ Fecha de vencimiento
+                                    ✓ Número de lote
+                                    ✓ Nombre y dirección de la empresa empacadora
+                                    ✓ Nombre y dirección de la empresa que exportadora
+                                    ✓ Nombre y dirección de la empresa de destino
+                                    ✓ País de producción
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
