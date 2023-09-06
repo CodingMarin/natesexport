@@ -131,6 +131,14 @@ export default function Product() {
                                     ✓ Calibre 9 0/110, 110/130, 130/150, 150/180
                                 </td>
                             </tr>
+                            <tr className="bg-white">
+                                <th scope="row" className="border px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                    Tratamiento de conservación
+                                </th>
+                                <td className="px-6 py-4">
+                                    ✓ Las aceitunas son tratadas con salmuera
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
