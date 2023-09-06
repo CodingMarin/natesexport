@@ -91,7 +91,7 @@ export default function Product() {
                             </tr>
                             <tr className="bg-white border-b">
                                 <th scope="row" className="border px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                                    Características Fisico Quimicas
+                                    Características físico químicas
                                 </th>
                                 <td className="px-6 py-4">✓ Hp MAX 4 -5%
 
@@ -107,6 +107,17 @@ export default function Product() {
                                     ✓ Insectos muertos propios del cultivo Máx. 20 en 10 g
                                     ✓ Fragmentos de pelo de roedor Máx. 1 en 10 g
                                     Referencia: RCD 14-2014 Sobre materias extrañas, Macroscópicas y microscópicas en Alimentos y Bebidas. ANVISA -BRASIL</td>
+                            </tr>
+                            <tr className="bg-white">
+                                <th scope="row" className="border px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                    Características microbiológicas
+                                </th>
+                                <td className="px-6 py-4">
+                                    ✓ Bacterias Mesófilas Aerobias 104 – 106 ufc/g máximo
+                                    ✓ Hongos y levaduras 102 – 103 ufc/g máximo
+                                    ✓ Coliformes totales Ausencia NMP/g
+                                    ✓ Salmonella Ausencia / 25g
+                                </td>
                             </tr>
                         </tbody>
                     </table>
