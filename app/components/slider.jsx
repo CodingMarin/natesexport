@@ -6,7 +6,6 @@ import dynamic from "next/dynamic"
 import "owl.carousel/dist/assets/owl.carousel.css"
 import "owl.carousel/dist/assets/owl.theme.default.css"
 import Products from '@/utils/products'
-import Link from 'next/link'
 
 //Guarda un limite de 4 items
 const product_reduce = Products.slice(0, 5)
@@ -72,7 +71,7 @@ const Slider = () => {
                                 return (
                                     <div key={i} id="featuredProducts" className="w-100 mx-auto">
                                         <div className="productListing">
-                                            <Link href={product.url}>
+                                            <div>
                                                 <div className="mx-auto text-center">
                                                     <figure className="max-w-full h-auto mx-auto rounded-md">
                                                         <Image
@@ -88,7 +87,7 @@ const Slider = () => {
                                                     </span>
                                                     </figure>
                                                 </div>
-                                            </Link>
+                                            </div>
                                         </div>
                                     </div>
                                 )
