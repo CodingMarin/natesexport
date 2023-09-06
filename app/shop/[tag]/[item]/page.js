@@ -89,7 +89,7 @@ export default function Product() {
                                 <td className="px-6 py-4">Estas aceitunas son cosechadas maduras en el árbol y no requieren de ningún tratamiento previo a su proceso de fermentación natural, donde se produce el ácido láctico disminuye el pH del producto, asegurando su estabilidad. Para el envasado se utiliza su líquido de gobierno como parte de la salmuera para mantener sus características organolépticas y asegurar su adecuada conservación.</td>
                             </tr>
                             <tr className="bg-white border-b">
-                                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                <th scope="row" className="border px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
                                     Características Fisico Quimicas
                                 </th>
                                 <td className="px-6 py-4">✓ Hp MAX 4 -5%
@@ -99,7 +99,7 @@ export default function Product() {
                                     ✓ APARIENCIA NEGRA SEGÚN REQUERIMIENTO</td>
                             </tr>
                             <tr className="bg-white">
-                                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                <th scope="row" className="border px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
                                     Contenido de materia extraña
                                 </th>
                                 <td className="px-6 py-4">✓ Fragmentos de insectos, indicadores de faltas de Buenas Prácticas (no considerados indicativos de riesgo). Máx. 20 en 10 g
