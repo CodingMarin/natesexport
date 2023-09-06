@@ -94,12 +94,10 @@ export default function Product() {
                                     Características físico químicas
                                 </th>
                                 <td className="px-6 py-4">✓ Hp MAX 4 -5%
-
                                     ✓ Acides libre MIN 5G AC. LACTICO / 100 SOLUCION ✓ °Be (Rango) 5-10
-
                                     ✓ APARIENCIA NEGRA SEGÚN REQUERIMIENTO</td>
                             </tr>
-                            <tr className="bg-white">
+                            <tr className="bg-white border-b">
                                 <th scope="row" className="border px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
                                     Contenido de materia extraña
                                 </th>
@@ -108,7 +106,7 @@ export default function Product() {
                                     ✓ Fragmentos de pelo de roedor Máx. 1 en 10 g
                                     Referencia: RCD 14-2014 Sobre materias extrañas, Macroscópicas y microscópicas en Alimentos y Bebidas. ANVISA -BRASIL</td>
                             </tr>
-                            <tr className="bg-white">
+                            <tr className="bg-white border-b">
                                 <th scope="row" className="border px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
                                     Características microbiológicas
                                 </th>
@@ -119,7 +117,7 @@ export default function Product() {
                                     ✓ Salmonella Ausencia / 25g
                                 </td>
                             </tr>
-                            <tr className="bg-white">
+                            <tr className="bg-white border-b">
                                 <th scope="row" className="border px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
                                     Organoleptico
                                 </th>
@@ -131,7 +129,7 @@ export default function Product() {
                                     ✓ Calibre 9 0/110, 110/130, 130/150, 150/180
                                 </td>
                             </tr>
-                            <tr className="bg-white">
+                            <tr className="bg-white border-b">
                                 <th scope="row" className="border px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
                                     Tratamiento de conservación
                                 </th>
@@ -139,7 +137,7 @@ export default function Product() {
                                     ✓ Las aceitunas son tratadas con salmuera
                                 </td>
                             </tr>
-                            <tr className="bg-white">
+                            <tr className="bg-white border-b">
                                 <th scope="row" className="border px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
                                     Presentación
                                 </th>
@@ -148,7 +146,7 @@ export default function Product() {
                                     ✓ Baldes 15 kg / 4 kg
                                 </td>
                             </tr>
-                            <tr className="bg-white">
+                            <tr className="bg-white border-b">
                                 <th scope="row" className="border px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
                                     Condiciones de almacenamiento y distribución
                                 </th>
@@ -156,7 +154,7 @@ export default function Product() {
                                     Almacenar en lugar fresco y seco a temperatura no mayor a 25°C, en un ambiente fresco y ventilado sin exposición directa al sol. Después de abierto refrigerar el producto y mantenerlo en su salmuera.
                                 </td>
                             </tr>
-                            <tr className="bg-white">
+                            <tr className="bg-white border-b">
                                 <th scope="row" className="border px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
                                     Vida útil
                                 </th>
@@ -164,7 +162,7 @@ export default function Product() {
                                     24 meses desde la fecha de envasado
                                 </td>
                             </tr>
-                            <tr className="bg-white">
+                            <tr className="bg-white border-b">
                                 <th scope="row" className="border px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
                                     Forma de consumo
                                 </th>
