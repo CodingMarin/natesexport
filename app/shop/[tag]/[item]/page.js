@@ -139,6 +139,23 @@ export default function Product() {
                                     ✓ Las aceitunas son tratadas con salmuera
                                 </td>
                             </tr>
+                            <tr className="bg-white">
+                                <th scope="row" className="border px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                    Presentación
+                                </th>
+                                <td className="px-6 py-4">
+                                    ✓ Bidones 60 kg / 15 kg
+                                    ✓ Baldes 15 kg / 4 kg
+                                </td>
+                            </tr>
+                            <tr className="bg-white">
+                                <th scope="row" className="border px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                    Condiciones de almacenamiento y distribución
+                                </th>
+                                <td className="px-6 py-4">
+                                    Almacenar en lugar fresco y seco a temperatura no mayor a 25°C, en un ambiente fresco y ventilado sin exposición directa al sol. Después de abierto refrigerar el producto y mantenerlo en su salmuera.
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
