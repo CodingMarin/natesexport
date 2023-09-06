@@ -1,0 +1,11 @@
+// tsconfig.json or jsconfig.json
+{
+  "compilerOptions": {
+    "baseUrl": "app/",
+    "paths": {
+      "@/styles/*": ["styles/*"],
+      "@/components/*": ["components/*"],
+      "@/utils/*": ["utils/*"]
+    }
+  }
+}
