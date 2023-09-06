@@ -65,7 +65,7 @@ export default function Product() {
                     />
                 </div>
                 <div className="">
-                    <h3 className="text-left text-sm font-normal text-black">{name}</h3>
+                    <h3 className="text-left uppercase text-sm">{name}</h3>
                     <div className="py-5">
                         <p className="text-sm text-gray-500">Product description. Ideal place to add more details about your product such as its size, materials, instructions for use and maintenance.</p>
                     </div>
