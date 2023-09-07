@@ -13,9 +13,9 @@ export default function Product() {
     const router = useRouter()
 
     const params = useParams();
-    const [url, setUrl] = useState('');
-    const [name, setName] = useState('');
-    const [description, setDescription] = useState('');
+    const [url, setUrl] = useState('')
+    const [name, setName] = useState('')
+    const [widget, steWidget] = useState(null)
 
     useEffect(() => {
         switch (params.item) {
@@ -80,122 +80,7 @@ export default function Product() {
                 </div>
             </div>
             <div className="max-w-5xl mx-auto py-10 w-full overflow-x-auto">
-                <div className="relative overflow-x-auto">
-                    <table className="border text-sm text-left text-gray-500">
-                        <thead className="text-xs text-gray-700 uppercase bg-gray-50">
-                            <tr>
-                                <th scope="col" className="border px-6 py-3 uppercase text-sm">Product name</th>
-                                <th scope="col" className="px-6 py-3 uppercase text-sm">{name}</th>
-                            </tr>
-                        </thead>
-                        <tbody className="border">
-                            <tr className="bg-white border-b">
-                                <th scope="row" className="border px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                                    Descripción
-                                </th>
-                                <td className="px-6 py-4">Estas aceitunas son cosechadas maduras en el árbol y no requieren de ningún tratamiento previo a su proceso de fermentación natural, donde se produce el ácido láctico disminuye el pH del producto, asegurando su estabilidad. Para el envasado se utiliza su líquido de gobierno como parte de la salmuera para mantener sus características organolépticas y asegurar su adecuada conservación.</td>
-                            </tr>
-                            <tr className="bg-white border-b">
-                                <th scope="row" className="border px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                                    Características físico químicas
-                                </th>
-                                <td className="px-6 py-4">✓ Hp MAX 4 -5%
-                                    ✓ Acides libre MIN 5G AC. LACTICO / 100 SOLUCION ✓ °Be (Rango) 5-10
-                                    ✓ APARIENCIA NEGRA SEGÚN REQUERIMIENTO</td>
-                            </tr>
-                            <tr className="bg-white border-b">
-                                <th scope="row" className="border px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                                    Contenido de materia extraña
-                                </th>
-                                <td className="px-6 py-4">✓ Fragmentos de insectos, indicadores de faltas de Buenas Prácticas (no considerados indicativos de riesgo). Máx. 20 en 10 g
-                                    ✓ Insectos muertos propios del cultivo Máx. 20 en 10 g
-                                    ✓ Fragmentos de pelo de roedor Máx. 1 en 10 g
-                                    Referencia: RCD 14-2014 Sobre materias extrañas, Macroscópicas y microscópicas en Alimentos y Bebidas. ANVISA -BRASIL</td>
-                            </tr>
-                            <tr className="bg-white border-b">
-                                <th scope="row" className="border px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                                    Características microbiológicas
-                                </th>
-                                <td className="px-6 py-4">
-                                    ✓ Bacterias Mesófilas Aerobias 104 – 106 ufc/g máximo
-                                    ✓ Hongos y levaduras 102 – 103 ufc/g máximo
-                                    ✓ Coliformes totales Ausencia NMP/g
-                                    ✓ Salmonella Ausencia / 25g
-                                </td>
-                            </tr>
-                            <tr className="bg-white border-b">
-                                <th scope="row" className="border px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                                    Organoleptico
-                                </th>
-                                <td className="px-6 py-4">
-                                    ✓ Tipo Aceituna sevillana negra entera
-                                    ✓ Color Rojizo, negro violáceo, violeta oscuro.
-                                    ✓ Olor y sabor Característico
-                                    ✓ Textura Firmes y resistentes
-                                    ✓ Calibre 9 0/110, 110/130, 130/150, 150/180
-                                </td>
-                            </tr>
-                            <tr className="bg-white border-b">
-                                <th scope="row" className="border px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                                    Tratamiento de conservación
-                                </th>
-                                <td className="px-6 py-4">
-                                    ✓ Las aceitunas son tratadas con salmuera
-                                </td>
-                            </tr>
-                            <tr className="bg-white border-b">
-                                <th scope="row" className="border px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                                    Presentación
-                                </th>
-                                <td className="px-6 py-4">
-                                    ✓ Bidones 60 kg / 15 kg
-                                    ✓ Baldes 15 kg / 4 kg
-                                </td>
-                            </tr>
-                            <tr className="bg-white border-b">
-                                <th scope="row" className="border px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                                    Condiciones de almacenamiento y distribución
-                                </th>
-                                <td className="px-6 py-4">
-                                    Almacenar en lugar fresco y seco a temperatura no mayor a 25°C, en un ambiente fresco y ventilado sin exposición directa al sol. Después de abierto refrigerar el producto y mantenerlo en su salmuera.
-                                </td>
-                            </tr>
-                            <tr className="bg-white border-b">
-                                <th scope="row" className="border px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                                    Vida útil
-                                </th>
-                                <td className="px-6 py-4">
-                                    24 meses desde la fecha de envasado
-                                </td>
-                            </tr>
-                            <tr className="bg-white border-b">
-                                <th scope="row" className="border px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                                    Forma de consumo
-                                </th>
-                                <td className="px-6 py-4">
-                                    De consumo directo Desinado para todo tipo de personas
-                                </td>
-                            </tr>
-                            <tr className="bg-white">
-                                <th scope="row" className="border px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                                    Rotulado
-                                </th>
-                                <td className="px-6 py-4">
-                                    ✓ Nombre del producto (Nombre científico)
-                                    ✓ Peso Neto
-                                    ✓ Peso Bruto
-                                    ✓ Fecha de envasado
-                                    ✓ Fecha de vencimiento
-                                    ✓ Número de lote
-                                    ✓ Nombre y dirección de la empresa empacadora
-                                    ✓ Nombre y dirección de la empresa que exportadora
-                                    ✓ Nombre y dirección de la empresa de destino
-                                    ✓ País de producción
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                {widget}
             </div>
         </div >
     );
