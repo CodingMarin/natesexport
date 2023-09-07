@@ -314,58 +314,6 @@ export default function Product() {
                 setWidget(
                     <div className="border w-100 py-2 px-2 my-5 rounded-sm">
                         <div className="pb-5">
-                            <h3 className="text-sm uppercase font-semibold">PRODUCTO</h3>
-                            <p className="text-sm text-gray-500">Café tostado, molido y envasado sin preservantes en envase trilaminar</p>
-                        </div>
-                        <div className="">
-                            <h3 className="text-sm uppercase font-semibold">DESCRIPCIÓN DEL PROCESO DE ELABORACIÓN</h3>
-                            <p className="text-sm text-gray-500">Privado, bajo normativa regulada</p>
-                        </div>
-                        <div className="py-5">
-                            <h3 className="text-sm uppercase font-semibold">LISTADO DE INGREDIENTES 100%</h3>
-                            <p className="text-sm text-gray-500">café</p>
-                        </div>
-                        <div className="">
-                            <h3 className="text-sm uppercase font-semibold">PROCEDENCIA</h3>
-                            <p className="text-sm text-gray-500">
-                                Perú, Departamento de Amazonas, Distrito de Camporredondo
-                            </p>
-                        </div>
-                        <div className="my-5">
-                            <h3 className="text-sm uppercase font-semibold">IMPORTANCIA DEL PRODUCTO</h3>
-                            <p className="text-sm text-gray-500">
-                                El producto es cultivado de manera permanente, generando empleo agrícola yayuda social.
-                            </p>
-                        </div>
-                        <div className="">
-                            <h3 className="text-sm uppercase font-semibold">FORMA DE CONSUMO O CONSUMIDORES POTECIALES</h3>
-                            <p className="text-sm text-gray-500">
-                                A partir de las semillas del café, el proceso final del café El Buen Amanecer es tostado, molido mezclado con azúcar o como café soluble. Sus consumidores potenciales son el Perú
-                            </p>
-                        </div>
-                        <div className="my-5">
-                            <h3 className="text-sm uppercase font-semibold">CARACTERÍSTICAS DEL PRODUCTO</h3>
-                            <p className="text-sm text-gray-500">El proceso de producción se inicia con la mezcla de todas las variedades del café, suelo apropiado, siembra del cultivo, sombreado de café, fertilización orgánica, podas y cuidados, cosecha, proceso post cosecha; despulpado, fermentado, lavado y clasificado, secado, café pergamino, café pilado.
-                            </p>
-                        </div>
-                        <div className="">
-                            <h3 className="text-sm uppercase font-semibold">CARACTERÍSTICAS COMERCIALES DEL PRODUCTO</h3>
-                            <p className="text-sm text-gray-500">Empaque: Sacos de yute. Peso: 45kg/saco. Almacenamiento: 18-25ºC, 60-75% H.R. Olor: Característico libre de olores extraños ajenos al producto. Limpieza: Grano limpio sin rasgos de tierra u otro material extraño. Estado de desarrollo: Grano de café bien desarrollado sin deformaciones.
-                            </p>
-                        </div>
-                        <div className="my-5">
-                            <h3 className="text-sm uppercase font-semibold">VIDA UTIL DEL CAFÉ</h3>
-                            <p className="text-sm text-gray-500">Hasta 1 año, almacenado en mejores condiciones</p>
-                        </div>
-                    </div>
-                )
-                break
-            case 'cafe-peruano':
-                setUrl('/cafe_peruano.jpg')
-                setName('Café Peruano')
-                setWidget(
-                    <div className="border w-100 py-2 px-2 my-5 rounded-sm">
-                        <div className="pb-5">
                             <h3 className="text-sm uppercase font-semibold">COMPOSICÍON / INGREDIENTES</h3>
                             <p className="text-sm text-gray-500">Tapa o sombrero y el tallo (género Boletales)</p>
                         </div>
@@ -442,6 +390,58 @@ export default function Product() {
                         <div className="my-5">
                             <h3 className="text-sm uppercase font-semibold">INSTRUCCIONES DE USO</h3>
                             <p className="text-sm text-gray-500">Se utiliza como saborizante y condimento.</p>
+                        </div>
+                    </div>
+                )
+                break
+            case 'cafe-peruano':
+                setUrl('/cafe_peruano.jpg')
+                setName('Café Peruano')
+                setWidget(
+                    <div className="border w-100 py-2 px-2 my-5 rounded-sm">
+                        <div className="pb-5">
+                            <h3 className="text-sm uppercase font-semibold">PRODUCTO</h3>
+                            <p className="text-sm text-gray-500">Café tostado, molido y envasado sin preservantes en envase trilaminar</p>
+                        </div>
+                        <div className="">
+                            <h3 className="text-sm uppercase font-semibold">DESCRIPCIÓN DEL PROCESO DE ELABORACIÓN</h3>
+                            <p className="text-sm text-gray-500">Privado, bajo normativa regulada</p>
+                        </div>
+                        <div className="py-5">
+                            <h3 className="text-sm uppercase font-semibold">LISTADO DE INGREDIENTES 100%</h3>
+                            <p className="text-sm text-gray-500">café</p>
+                        </div>
+                        <div className="">
+                            <h3 className="text-sm uppercase font-semibold">PROCEDENCIA</h3>
+                            <p className="text-sm text-gray-500">
+                                Perú, Departamento de Amazonas, Distrito de Camporredondo
+                            </p>
+                        </div>
+                        <div className="my-5">
+                            <h3 className="text-sm uppercase font-semibold">IMPORTANCIA DEL PRODUCTO</h3>
+                            <p className="text-sm text-gray-500">
+                                El producto es cultivado de manera permanente, generando empleo agrícola yayuda social.
+                            </p>
+                        </div>
+                        <div className="">
+                            <h3 className="text-sm uppercase font-semibold">FORMA DE CONSUMO O CONSUMIDORES POTECIALES</h3>
+                            <p className="text-sm text-gray-500">
+                                A partir de las semillas del café, el proceso final del café El Buen Amanecer es tostado, molido mezclado con azúcar o como café soluble. Sus consumidores potenciales son el Perú
+                            </p>
+                        </div>
+                        <div className="my-5">
+                            <h3 className="text-sm uppercase font-semibold">CARACTERÍSTICAS DEL PRODUCTO</h3>
+                            <p className="text-sm text-gray-500">El proceso de producción se inicia con la mezcla de todas las variedades del café, suelo apropiado, siembra del cultivo, sombreado de café, fertilización orgánica, podas y cuidados, cosecha, proceso post cosecha; despulpado, fermentado, lavado y clasificado, secado, café pergamino, café pilado.
+                            </p>
+                        </div>
+                        <div className="">
+                            <h3 className="text-sm uppercase font-semibold">CARACTERÍSTICAS COMERCIALES DEL PRODUCTO</h3>
+                            <p className="text-sm text-gray-500">Empaque: Sacos de yute. Peso: 45kg/saco. Almacenamiento: 18-25ºC, 60-75% H.R. Olor: Característico libre de olores extraños ajenos al producto. Limpieza: Grano limpio sin rasgos de tierra u otro material extraño. Estado de desarrollo: Grano de café bien desarrollado sin deformaciones.
+                            </p>
+                        </div>
+                        <div className="my-5">
+                            <h3 className="text-sm uppercase font-semibold">VIDA UTIL DEL CAFÉ</h3>
+                            <p className="text-sm text-gray-500">Hasta 1 año, almacenado en mejores condiciones</p>
                         </div>
                     </div>
                 )
