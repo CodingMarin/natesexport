@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function shopCard({ picture, title, url }) {
     return (
-        <div class=" bg-white border rounded-lg shadow">
+        <div class=" bg-white border border-slate-200 rounded-lg shadow-md">
             <Image
                 class="p-8 rounded-t-lg"
                 src={picture}
