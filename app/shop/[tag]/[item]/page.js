@@ -5,9 +5,9 @@ import { useParams } from 'next/navigation'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import Breadcrumbs from '@/components/breadcrumbs'
-import aceitunaWidget from '@/components/aceitunas'
-import curcumaWidget from '@/components/curcuma'
-import oreganoWidget from '@/components/oregano'
+// import aceitunaWidget from '@/components/aceitunas'
+// import curcumaWidget from '@/components/curcuma'
+// import oreganoWidget from '@/components/oregano'
 
 export default function Product() {
     const router = useRouter()
@@ -15,7 +15,7 @@ export default function Product() {
     const params = useParams();
     const [url, setUrl] = useState('')
     const [name, setName] = useState('')
-    const [widget, steWidget] = useState(null)
+    // const [widget, steWidget] = useState(null)
 
     useEffect(() => {
         switch (params.item) {
@@ -23,19 +23,19 @@ export default function Product() {
                 setUrl('/oregano_extra_min.jpg')
                 setName('Oregano Organico')
                 setDescription('Descripción del orégano orgánico')
-                steWidget(oreganoWidget)
+                // steWidget(oreganoWidget)
                 break
             case 'curcuma':
                 setUrl('/curcuma_peruana.jpg')
                 setName('Cúrcuma')
                 setDescription('Descripción de la cúrcuma')
-                steWidget(curcumaWidget)
+                // steWidget(curcumaWidget)
                 break
             case 'aceitunas-peruanas':
                 setUrl('/aceitunas_peruanas.jpg')
                 setName('Aceitunas Peruanas')
                 setDescription('Descripción de las aceitunas peruanas')
-                steWidget(aceitunaWidget)
+                // steWidget(aceitunaWidget)
                 break
             case 'hongo-deshidratado':
                 setUrl('/hongo_deshidratado_min.jpg')
@@ -80,7 +80,7 @@ export default function Product() {
                 </div>
             </div>
             <div className="max-w-5xl mx-auto py-10 w-full overflow-x-auto">
-                {widget}
+                {/* {widget} */}
             </div>
         </div >
     );
