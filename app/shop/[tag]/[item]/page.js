@@ -12,14 +12,14 @@ export default function Product() {
     const params = useParams();
     const [url, setUrl] = useState('')
     const [name, setName] = useState('')
-    const [widget, steWidget] = useState(null)
+    const [widget, setWidget] = useState(null)
 
     useEffect(() => {
         switch (params.item) {
             case 'oregano-organico':
                 setUrl('/oregano_extra_min.jpg')
                 setName('Oregano Organico')
-                steWidget(<div className="border w-100 py-2 px-2 my-5 rounded-sm">
+                setWidget(<div className="border w-100 py-2 px-2 my-5 rounded-sm">
                     <div className="pb-5">
                         <h3 className="text-sm uppercase font-semibold">COMPOSICÍON / INGREDIENTES</h3>
                         <p className="text-sm text-gray-500">Hojas y flores de orégano desecadas, limpias (género Origanum spp)</p>
@@ -111,7 +111,7 @@ export default function Product() {
             case 'curcuma':
                 setUrl('/curcuma_peruana.jpg')
                 setName('Cúrcuma')
-                steWidget(
+                setWidget(
                     <div className="border w-100 py-2 px-2 my-5 rounded-sm">
                         <div className="mb-4">
                             <h3 className="text-sm uppercase font-semibold">Producto</h3>
@@ -195,7 +195,7 @@ export default function Product() {
             case 'aceitunas-peruanas':
                 setUrl('/aceitunas_peruanas.jpg')
                 setName('Aceitunas Peruanas')
-                steWidget(
+                setWidget(
                     <div className="border w-100 py-2 px-2 my-5 rounded-sm">
                         <div className="mb-4">
                             <h3 className="text-sm uppercase font-semibold">Producto</h3>
@@ -311,6 +311,88 @@ export default function Product() {
             case 'hongo-deshidratado':
                 setUrl('/hongo_deshidratado_min.jpg')
                 setName('Hongo Deshidratado')
+                setWidget(
+                    <div className="border w-100 py-2 px-2 my-5 rounded-sm">
+                        <div className="pb-5">
+                            <h3 className="text-sm uppercase font-semibold">COMPOSICÍON / INGREDIENTES</h3>
+                            <p className="text-sm text-gray-500">Tapa o sombrero y el tallo (género Boletales)</p>
+                        </div>
+                        <div className="">
+                            <h3 className="text-sm uppercase font-semibold">TRATAMIENTO / PROCESAMIENTO</h3>
+                            <p className="text-sm text-gray-500">El hongo recolectado se recibe desecado y se someten a una limpieza física mediante zarandas. para retirar cualquier tipo de impuerza, y otra materia extraña que pueda contener, y luego se someten a un proceso de limpieza por tamizado mediante zarandas, donde se separa también por tamaños, posteriormente se somete a una limpieza neumática. La maquinaria cuenta con imanes para el retiro de los fragmentos de metal. El hongo limpio, se estandariza antes de su envasado y comercializaciión</p>
+                        </div>
+                        <div className="py-5">
+                            <h3 className="text-sm uppercase font-semibold">CARACTERÍSTICAS FÍSICO QUÍMICAS</h3>
+                            <table className="table-fixed text-sm text-gray-500 my-1">
+                                <tbody>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Humedad</td>
+                                        <td className="border-r px-1">Máx. 8%</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Ttrozos pequeños</td>
+                                        <td className="border-r px-1">Máx 15%</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Total, de defectos en trozos</td>
+                                        <td className="border-r px-1">Máx 30%</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Apariencia</td>
+                                        <td className="border-r px-1">Trozos largos</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Fibras bruta</td>
+                                        <td className="border-r px-1">Máx 4 MGL/KG</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <em className="text-xs text-gray-500">Referencia: NTP 209.190: 2011 Enmienda 1.</em>
+                        </div>
+                        <div className="">
+                            <h3 className="text-sm uppercase font-semibold">CONTENIDO DE MATERIA EXTRAÑA</h3>
+                            <p className="text-sm text-gray-500">•Fragmentos de insectos, indicadores de faltas de Buenas Prácticas (no considerados indicativos de riesgo). Máx. 20 en 10 g</p>
+                            <p className="text-sm text-gray-500">•Insectos muertos propios del cultivo Máx. 20 en 10 g</p>
+                            <p className="text-sm text-gray-500">•Fragmentos de pelo de roedor Máx. 1 en 10 g</p>
+                            <em className="text-xs text-gray-500">Referencia: RCD 14-2014 Sobre materias extrañas, Macroscópicas y microscópicas en Alimentos y Bebidas. ANVISA -BRASIL</em>
+                        </div>
+                        <div className="my-5">
+                            <h3 className="text-sm uppercase font-semibold">CARACTERÍSTICAS MICROBIOLÓGICAS</h3>
+                            <p className="text-sm text-gray-500">•Aerobios mesófilos Máx. 10^5 ufc/g</p>
+                            <p className="text-sm text-gray-500">•Mohos Máx. 10^3 ufc/g</p>
+                            <p className="text-sm text-gray-500">•Coliformes Máx. 10^2 ufc/g</p>
+                            <p className="text-sm text-gray-500">•Salmonella ausencia en 25 gramos</p>
+                            <em className="text-xs text-gray-500">Referencia: RM 591- MINSA-2008</em>
+                        </div>
+                        <div className="">
+                            <h3 className="text-sm uppercase font-semibold">CONTAMINANTES</h3>
+                            <p className="text-sm text-gray-500">•Plomo Máx. 0.3 mg/Kg</p>
+                            <p className="text-sm text-gray-500">•Cadmio Máx. 0.2 mg/Kg</p>
+                            <p className="text-sm text-gray-500">•Arsénico Máx. 0.3 mg/Kg</p>
+                            <em className="text-xs text-gray-500">Referencia RDC 42-2014 ANVISA BRASIL (MERCOSUR)</em>
+                        </div>
+                        <div className="my-5">
+                            <h3 className="text-sm uppercase font-semibold">Tratamiento de conservación</h3>
+                            <p className="text-sm text-gray-500">El hongo procesado se conserva porque está desecado, la baja humedad que contiene permite su conservación.</p>
+                        </div>
+                        <div className="">
+                            <h3 className="text-sm uppercase font-semibold">Presentación</h3>
+                            <p className="text-sm text-gray-500">✓Bolsas de papel, (doble bolsa) con una bolsa de polietileno de baja densidad con un contenido Neto de 15 Kg</p>
+                        </div>
+                        <div className="my-5">
+                            <h3 className="text-sm uppercase font-semibold">CONDICIONES DE ALMACENAMIENTO Y DISTRIBUCIÓN</h3>
+                            <p className="text-sm text-gray-500">En un lugar fresco y seco, protegido de toda humedad</p>
+                        </div>
+                        <div className="">
+                            <h3 className="text-sm uppercase font-semibold">VIDA ÚTIL</h3>
+                            <p className="text-sm text-gray-500">24 meses desde la fecha de envasado</p>
+                        </div>
+                        <div className="my-5">
+                            <h3 className="text-sm uppercase font-semibold">INSTRUCCIONES DE USO</h3>
+                            <p className="text-sm text-gray-500">Se utiliza como saborizante y condimento.</p>
+                        </div>
+                    </div>
+                )
                 break
             case 'cafe-peruano':
                 setUrl('/cafe_peruano.jpg')
