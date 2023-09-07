@@ -1,10 +1,12 @@
-'use client';
+'use client'
 
-import React, { useEffect, useState } from 'react';
-import { useParams } from 'next/navigation';
-import Image from 'next/image';
+import React, { useEffect, useState } from 'react'
+import { useParams } from 'next/navigation'
+import Image from 'next/image'
 import { useRouter } from 'next/navigation'
-import Breadcrumbs from '@/components/breadcrumbs';
+import Breadcrumbs from '@/components/breadcrumbs'
+import aceitunaWidget from '@/components/aceitunas'
+import curcumaWidget from '@/components/curcuma'
 
 export default function Product() {
     const router = useRouter()
@@ -17,35 +19,37 @@ export default function Product() {
     useEffect(() => {
         switch (params.item) {
             case 'oregano-organico':
-                setUrl('/oregano_extra_min.jpg');
-                setName('Oregano Organico');
-                setDescription('Descripción del orégano orgánico');
-                break;
+                setUrl('/oregano_extra_min.jpg')
+                setName('Oregano Organico')
+                setDescription('Descripción del orégano orgánico')
+                break
             case 'curcuma':
-                setUrl('/curcuma_peruana.jpg');
-                setName('Cúrcuma');
-                setDescription('Descripción de la cúrcuma');
-                break;
+                setUrl('/curcuma_peruana.jpg')
+                setName('Cúrcuma')
+                setDescription('Descripción de la cúrcuma')
+                steWidget(curcumaWidget)
+                break
             case 'aceitunas-peruanas':
-                setUrl('/aceitunas_peruanas.jpg');
-                setName('Aceitunas Peruanas');
-                setDescription('Descripción de las aceitunas peruanas');
-                break;
+                setUrl('/aceitunas_peruanas.jpg')
+                setName('Aceitunas Peruanas')
+                setDescription('Descripción de las aceitunas peruanas')
+                steWidget(aceitunaWidget)
+                break
             case 'hongo-deshidratado':
-                setUrl('/hongo_deshidratado_min.jpg');
-                setName('Hongo Deshidratado');
-                setDescription('Descripción del hongo deshidratado');
-                break;
+                setUrl('/hongo_deshidratado_min.jpg')
+                setName('Hongo Deshidratado')
+                setDescription('Descripción del hongo deshidratado')
+                break
             case 'cafe-peruano':
-                setUrl('/cafe_peruano.jpg');
-                setName('Café Peruano');
-                setDescription('Descripción del café peruano');
-                break;
+                setUrl('/cafe_peruano.jpg')
+                setName('Café Peruano')
+                setDescription('Descripción del café peruano')
+                break
             default:
                 router.push('/shop')
-                break;
+                break
         }
-    }, [params.item, router]);
+    }, [params.item, router])
 
     return (
         <div className="bg-white pb-20">
