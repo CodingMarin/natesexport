@@ -22,30 +22,25 @@ export default function Product() {
             case 'oregano-organico':
                 setUrl('/oregano_extra_min.jpg')
                 setName('Oregano Organico')
-                setDescription('Descripción del orégano orgánico')
                 // steWidget(oreganoWidget)
                 break
             case 'curcuma':
                 setUrl('/curcuma_peruana.jpg')
                 setName('Cúrcuma')
-                setDescription('Descripción de la cúrcuma')
                 // steWidget(curcumaWidget)
                 break
             case 'aceitunas-peruanas':
                 setUrl('/aceitunas_peruanas.jpg')
                 setName('Aceitunas Peruanas')
-                setDescription('Descripción de las aceitunas peruanas')
                 // steWidget(aceitunaWidget)
                 break
             case 'hongo-deshidratado':
                 setUrl('/hongo_deshidratado_min.jpg')
                 setName('Hongo Deshidratado')
-                setDescription('Descripción del hongo deshidratado')
                 break
             case 'cafe-peruano':
                 setUrl('/cafe_peruano.jpg')
                 setName('Café Peruano')
-                setDescription('Descripción del café peruano')
                 break
             default:
                 router.push('/shop')
