@@ -159,7 +159,7 @@ export default function Product() {
                 </div>
             </div>
             <div className="max-w-5xl mx-auto py-10 w-full overflow-x-auto">
-                {/* {widget} */}
+                {widget}
             </div>
         </div >
     );
