@@ -7,6 +7,7 @@ import { useRouter } from 'next/navigation'
 import Breadcrumbs from '@/components/breadcrumbs'
 import aceitunaWidget from '@/components/aceitunas'
 import curcumaWidget from '@/components/curcuma'
+import oreganoWidget from '@/components/oregano'
 
 export default function Product() {
     const router = useRouter()
@@ -22,6 +23,7 @@ export default function Product() {
                 setUrl('/oregano_extra_min.jpg')
                 setName('Oregano Organico')
                 setDescription('Descripción del orégano orgánico')
+                steWidget(oreganoWidget)
                 break
             case 'curcuma':
                 setUrl('/curcuma_peruana.jpg')
