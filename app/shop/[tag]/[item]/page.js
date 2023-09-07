@@ -111,12 +111,202 @@ export default function Product() {
             case 'curcuma':
                 setUrl('/curcuma_peruana.jpg')
                 setName('Cúrcuma')
-                // steWidget(curcumaWidget)
+                steWidget(
+                    <div className="border w-100 py-2 px-2 my-5 rounded-sm">
+                        <div className="mb-4">
+                            <h3 className="text-sm uppercase font-semibold">Producto</h3>
+                            <p className="text-sm text-gray-500">Cúrcuma  molida, origen Perú  ,  envasada  en sacos de polipropileno  con interior de polietieleno  de  25 kgs./ Ground  curcuma,  origin Peru,  packed in polipropylene bags + liner of  25 kgs. net each </p>
+                        </div>
+                        <div className="">
+                            <h3 className="text-sm uppercase font-semibold">ESPECIFICACIONES TECNICAS / FISICOQUIMICAS</h3>
+                            <table className="table-fixed text-sm text-gray-500 my-1">
+                                <tbody>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Malla / Screen</td>
+                                        <td className="border-r px-1">U.S. # 40</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Contenido de curcumina / curcumin  content</td>
+                                        <td className="border-r px-1">minimum 4.5%</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Humedad / Moisture</td>
+                                        <td className="border-r px-1">Max. 12% </td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Pesticidas / Pesticide</td>
+                                        <td className="border-r px-1">None</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div className="my-5">
+                            <h3 className="text-sm uppercase font-semibold">CALIDAD SENSORIAL  & SENSORIAL QUALITY</h3>
+                            <table className="table-fixed text-sm text-gray-500 my-1">
+                                <tbody>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Sabor & Aroma</td>
+                                        <td className="border-r px-1">Característico, libre de  cualquier otro  olor y sabor </td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Color</td>
+                                        <td className="border-r px-1">Amarillo fuerte</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div className="">
+                            <h3 className="text-sm uppercase font-semibold">CONTENIDO DE MATERIA EXTRAÑA</h3>
+                            <p className="text-sm text-gray-500">•Fragmentos de insectos, indicadores de faltas de Buenas Prácticas (no considerados indicativos de riesgo). Máx. 20 en 10 g</p>
+                            <p className="text-sm text-gray-500">•Insectos muertos propios del cultivo Máx. 20 en 10 g</p>
+                            <p className="text-sm text-gray-500">•Fragmentos de pelo de roedor Máx. 1 en 10 g</p>
+                            <em className="text-xs text-gray-500">Referencia: RCD 14-2014 Sobre materias extrañas, Macroscópicas y microscópicas en Alimentos y Bebidas. ANVISA -BRASIL</em>
+                        </div>
+                        <div className="my-5">
+                            <h3 className="text-sm uppercase font-semibold">CARACTERÍSTICAS MICROBIOLÓGICAS</h3>
+                            <p className="text-sm text-gray-500">•Aerobios mesófilos Máx. 105 ufc/g</p>
+                            <p className="text-sm text-gray-500">•Mohos Máx. 103 ufc/g</p>
+                            <p className="text-sm text-gray-500">•Coliformes Máx. 102 ufc/g</p>
+                            <p className="text-sm text-gray-500">•Salmonella ausencia en 25 gramos</p>
+                            <em className="text-xs text-gray-500">Referencia: RM 591- MINSA-2008</em>
+                        </div>
+                        <div className="">
+                            <h3 className="text-sm uppercase font-semibold">CONTAMINANTES</h3>
+                            <p className="text-sm text-gray-500">•Plomo Máx. 0.3 mg/Kg</p>
+                            <p className="text-sm text-gray-500">•Cadmio Máx. 0.2 mg/Kg</p>
+                            <p className="text-sm text-gray-500">•Arsénico Máx. 0.3 mg/Kg</p>
+                            <em className="text-xs text-gray-500">Referencia RDC 42-2014 ANVISA BRASIL (MERCOSUR)</em>
+                        </div>
+                        <div className="my-5">
+                            <h3 className="text-sm uppercase font-semibold">CONDICIONES DE ALMACENAMIENTO Y DISTRIBUCIÓN</h3>
+                            <p className="text-sm text-gray-500">En un lugar fresco y seco, protegido de toda humedad</p>
+                        </div>
+                        <div className="">
+                            <h3 className="text-sm uppercase font-semibold">VIDA ÚTIL</h3>
+                            <p className="text-sm text-gray-500">24 meses desde la fecha de envasado</p>
+                        </div>
+                        <div className="my-5">
+                            <h3 className="text-sm uppercase font-semibold">INSTRUCCIONES DE USO</h3>
+                            <p className="text-sm text-gray-500">Se utiliza como saborizante y condimento.</p>
+                        </div>
+                    </div>
+                )
                 break
             case 'aceitunas-peruanas':
                 setUrl('/aceitunas_peruanas.jpg')
                 setName('Aceitunas Peruanas')
-                // steWidget(aceitunaWidget)
+                steWidget(
+                    <div className="border w-100 py-2 px-2 my-5 rounded-sm">
+                        <div className="mb-4">
+                            <h3 className="text-sm uppercase font-semibold">Producto</h3>
+                            <p className="text-sm text-gray-500">Estas aceitunas son cosechadas maduras en el árbol y no requieren de ningun tratamiento previo a su proceso de
+                                fermentación natural, donde se produce. el ácido láctico disminuye el ph del producto, asegurando su estabilidad.
+                                Para el envasado se utiliza su liquido de gobierno como parte de la salmuera para mantener características organolépticas y asegurar su adecuada consevación</p>
+                        </div>
+                        <div className="">
+                            <h3 className="text-sm uppercase font-semibold">CARACTERÍSTICAS FÍSICO QUÍMICAS</h3>
+                            <table className="table-fixed text-sm text-gray-500 my-1">
+                                <tbody>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Hp</td>
+                                        <td className="border-r px-1">MAX 4-5%</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Acides libre</td>
+                                        <td className="border-r px-1">MIN 5G AC. LACTICO / 100 SOLUCION</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">ºBe</td>
+                                        <td className="border-r px-1">(Rango) 5-10</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">APARIENCIA</td>
+                                        <td className="border-r px-1">NEGRA SEGÚN REQUERIMIENTO</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div className="my-5">
+                            <h3 className="text-sm uppercase font-semibold">CONTENIDO DE MATERIA EXTRAÑA</h3>
+                            <p className="text-sm text-gray-500">•Fragmentos de insectos, indicadores de faltas de Buenas Prácticas (no considerados indicativos de riesgo). Máx. 20 en 10 g</p>
+                            <p className="text-sm text-gray-500">•Insectos muertos propios del cultivo Máx. 20 en 10 g</p>
+                            <p className="text-sm text-gray-500">•Fragmentos de pelo de roedor Máx. 1 en 10 g</p>
+                        </div>
+                        <div className="">
+                            <h3 className="text-sm uppercase font-semibold">CARACTERÍSTICAS MICROBIOLÓGICAS</h3>
+                            <table className="table-fixed text-sm text-gray-500 my-1">
+                                <tbody>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Bacterias Mesófilas Aerobias</td>
+                                        <td className="border-r px-1">104 - 106 ufc/g máximo</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Hongos y levaduras</td>
+                                        <td className="border-r px-1">102 - 103 ufc/g máximo</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Coliformes totales</td>
+                                        <td className="border-r px-1">Ausencia NMP/g</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Salmonella</td>
+                                        <td className="border-r px-1">Ausencia / 25g</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div className="my-5">
+                            <h3 className="text-sm uppercase font-semibold">ORGANOLEPTICO</h3>
+                            <table className="table-fixed text-sm text-gray-500 my-1">
+                                <tbody>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Tipo</td>
+                                        <td className="border-r px-1">Aceituna sevillana negra entera</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Color</td>
+                                        <td className="border-r px-1">Rojizo, negro violáceo, violeta oscuro.</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Olor y sabor</td>
+                                        <td className="border-r px-1">Característico</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Textura</td>
+                                        <td className="border-r px-1">Firmes y resistentes</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Calibre</td>
+                                        <td className="border-r px-1">9 0/110, 110/130, 130/150, 150/180</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div className="">
+                            <h3 className="text-sm uppercase font-semibold">TRATAMIENTO DE CONSERVACIÓN</h3>
+                            <p className="text-sm text-gray-500">•El hongo procesado se conserva porque está desecado, la baja humedad que contiene permite su conservacíon.</p>
+                        </div>
+                        <div className="my-5">
+                            <h3 className="text-sm uppercase font-semibold">PRESENTACIÓN</h3>
+                            <table className="table-fixed text-sm text-gray-500 my-1">
+                                <tbody>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Bidones</td>
+                                        <td className="border-r px-1">60kg / 15kg</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Baldes</td>
+                                        <td className="border-r px-1">15kg / 4kg</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div className="">
+                            <h3 className="text-sm uppercase font-semibold">VIDA UTIL</h3>
+                            <p className="text-sm text-gray-500">24 meses desde la fecha de envasado</p>
+                        </div>
+                    </div>
+                )
                 break
             case 'hongo-deshidratado':
                 setUrl('/hongo_deshidratado_min.jpg')
@@ -158,7 +348,7 @@ export default function Product() {
                     <button type="submit" onClick={() => router.push('https://api.whatsapp.com/send/?phone=961361759&text=YOUR_MESSAGE')} className="sm:w-auto w-full text-white bg-[#499d91] hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Comprar ahora</button>
                 </div>
             </div>
-            <div className="max-w-5xl mx-auto py-10 w-full overflow-x-auto">
+            <div className="max-w-5xl mx-auto py-10 w-full px-4">
                 {widget}
             </div>
         </div >
