@@ -58,10 +58,6 @@ const Slider = () => {
             <div className="pb-2 bg-transparent" id="owl-carousel-products">
                 <ul id="owl-carousel-ul" className="owl-carousel owl-loaded owl-drag">
                     <OwlCarousel className="owl-theme" loop margin={4} nav={true}
-                        navText={[
-                            "<svg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-arrow-left' width='40' height='40' viewBox='0 0 24 24' stroke-width='1' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'><path stroke='none' d='M0 0h24v24H0z' fill='none'></path><path d='M5 12l14 0'></path><path d='M5 12l6 6'></path><path d='M5 12l6 -6'></path></svg>",
-                            '<div className="text-black">asd<div>',
-                        ]}
                         dots={false}
                         animateIn={true}
                         {...options}
