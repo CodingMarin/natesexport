@@ -172,7 +172,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(73,157,145,0.4)] bg-no-repeat object-fill max-h-80 h-full py-20" style={{ backgroundImage: "url('/camp_cos_lima.png')" }}>
+      <div className="bg-[rgba(73,157,145,0.4)] bg-no-repeat object-fill max-h-80 h-full py-20" style={{ backgroundImage: "url('/camp_cos_lima.webp')" }}>
         <div className="py-4 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-5xl sm:mx-auto mx-auto w-full justify-center items-center">
           <p className="font-poppinsbold lg:text-4xl text-3xl text-center text-white">Aliados</p>
           <div className="justify-around hidden lg:flex">
@@ -181,13 +181,14 @@ export default function Home() {
           <div className="lg:w-96 w-72 h-auto mx-auto">
             <Image
               className="drop-shadow-lg"
-              src="/CCL_Asociado_edited.png"
-              alt="Picture of the author"
+              src="/CCL_Asociado_edited.webp"
+              title="CCL LOGO"
+              alt="Logo"
               quality={100}
               width={500}
               height={500}
-              blurDataURL="data:..."
-              placeholder="blur" // Optional blur-up while loading
+              loading="lazy"
+              priority
             />
           </div>
         </div>

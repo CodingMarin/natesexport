@@ -88,11 +88,13 @@ export default function Navigation() {
                         <div className="lg:flex hidden items-center justify-end">
                             <Image
                                 className="drop-shadow-md h-14 w-44"
-                                src="/logo-ccl-2023.png"
-                                alt="CCLIMA"
+                                title="Logo CCL"
+                                src="/logo-ccl-2023.webp"
+                                alt="logo"
                                 width={600}
                                 height={600}
                                 priority
+                                loading="lazy"
                             />
                         </div>
                     </div>
