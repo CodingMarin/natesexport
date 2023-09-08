@@ -47,6 +47,7 @@ body::-webkit-scrollbar{
        url('/fonts/nature_beauty_personal_use-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -55,6 +56,7 @@ body::-webkit-scrollbar{
        url('/fonts/poppins-bold-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -63,6 +65,7 @@ body::-webkit-scrollbar{
        url('/fonts/poppins-medium-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -71,6 +74,7 @@ body::-webkit-scrollbar{
        url('/fonts/poppins-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -79,6 +83,7 @@ body::-webkit-scrollbar{
        url('/fonts/poppins-semibold-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 .curved-demo {
