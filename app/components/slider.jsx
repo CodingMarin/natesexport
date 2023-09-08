@@ -83,7 +83,7 @@ const Slider = () => {
                                                             title={product.name}
                                                         />
                                                         <span className="mx-auto mt-1">
-                                                        <span className="text-sm">{product.name}</span>
+                                                        <span className="text-sm text-[#091E42] font-medium">{product.name}</span>
                                                     </span>
                                                     </figure>
                                                 </div>
