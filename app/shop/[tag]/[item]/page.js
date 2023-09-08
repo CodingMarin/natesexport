@@ -401,7 +401,7 @@ export default function Product() {
                 break
             case 'cafe':
                 setUrl('/cafe_peruano.jpg')
-                setName('Café')
+                setName('Café orgánico')
                 setWidget(
                     <div className="border w-100 py-2 px-2 my-5 rounded-sm">
                         <div className="pb-5">
