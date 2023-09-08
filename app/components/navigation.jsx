@@ -15,15 +15,15 @@ const links = [
     },
     {
         label: "Sobre nosotros",
-        route: "/about"
+        route: "#"
     },
     {
         label: "Donde comprar",
-        route: "/sale"
+        route: "#"
     },
     {
         label: "Blog",
-        route: "/blog"
+        route: "#"
     }
 
 ]
