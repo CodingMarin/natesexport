@@ -18,7 +18,7 @@ export default function Product() {
         switch (params.item) {
             case 'oregano-organico':
                 setUrl('/oregano_extra_min.jpg')
-                setName('Oregano Organico')
+                setName('Oregano Orgánico')
                 setWidget(<div className="border w-100 py-2 px-2 my-5 rounded-sm">
                     <div className="pb-5">
                         <h3 className="text-sm uppercase font-semibold">COMPOSICÍON / INGREDIENTES</h3>
