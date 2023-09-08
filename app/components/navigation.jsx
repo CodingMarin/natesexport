@@ -67,9 +67,9 @@ export default function Navigation() {
                                     <div className="flex items-center justify-center">
                                         <button className="mx-1" onClick={() => setIsShowin(isShowing => !isShowing)}>
                                             <div className="space-y-1 group cursor-pointer relative w-4 h-[8px]">
+                                                <span className="transition-all ease-out block h-[1.5px] bg-slate-300 group-hover:bg-slate-300 w-6"></span>
+                                                <span className="transition-all ease-out block h-[1.5px] bg-slate-300 group-hover:bg-slate-300 w-6"></span>
                                                 <span className="transition-all ease-out block h-[1.5px] bg-slate-300 group-hover:bg-slate-300 w-5"></span>
-                                                <span className="transition-all ease-out block h-[1.5px] bg-slate-300 group-hover:bg-slate-300 w-5"></span>
-                                                <span className="transition-all ease-out block h-[1.5px] bg-slate-300 group-hover:bg-slate-300 w-4"></span>
                                             </div>
                                         </button>
                                     </div>
