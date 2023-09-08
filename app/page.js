@@ -113,17 +113,17 @@ export default function Home() {
           <Cardquality
             url={'/value_work.png'}
             title={'VALORAMOS EL TRABAJO DE CAMPO'}
-            description={'At each stage of production, we value the field work carried out by local farmers. We are proud to support and recognize their hard work, making sure they are treated fairly and with dignity. By valuing and promoting quality in field work, we can offer spices and condiments of excellence, cultivated with passion and dedication. Discover the story behind our products and the positive impact we make in farming communities.'}
+            description={'En cada etapa de producción, valoramos el trabajo de campo realizado por agricultores locales. Nos enorgullece apoyar y reconocer su arduo trabajo, asegurándonos de que reciban un trato justo y digno. Al valorar y fomentar la calidad en el trabajo de campo, podemos ofrecer especias y condimentos de excelencia, cultivados con pasión y dedicación. Descubre la historia detrás de nuestros productos y el impacto positivo que generamos en las comunidades agrícolas.'}
           />
           <Cardquality
             url={'/export_safety.png'}
-            title={'EXPORTACION SEGURA'}
-            description={'At our, our commitment is to bring the authentic flavors of Peru to the world, ensuring that each spice and seasoning meets international quality standards.'}
+            title={'EXPORTACIÓN SEGURA'}
+            description={'En nuestra, nuestro compromiso es llevar los sabores auténticos de Perú al mundo, garantizando que cada especia y condimento cumpla con los estándares internacionales de calidad.'}
           />
           <Cardquality
             url={'/materia_prima.png'}
             title={'OFRECEMOS CALIDAD'}
-            description={'In our constant quest to offer superior products, we carry out rigorous inspections of the raw materials we use. We work closely with trusted farmers and suppliers to ensure our spices and seasonings are sustainably grown and following responsible farming practices. Our thorough inspection guarantees the purity and freshness of our products.'}
+            description={'En nuestra búsqueda constante por ofrecer productos superiores, realizamos rigurosas inspecciones de la materia prima que utilizamos. Trabajamos en estrecha colaboración con agricultores y proveedores de confianza para asegurar que nuestras especias y condimentos sean cultivados de manera sostenible y siguiendo prácticas agrícolas responsables. Nuestra inspección minuciosa garantiza la pureza y frescura de nuestros productos.'}
           />
         </div>
         <div className="mx-auto max-w-2xl top-0 inset-0">
@@ -156,7 +156,7 @@ export default function Home() {
           </div>
           <div className="hidden lg:block">
             <h1 className="text-5xl italic font-bold text-center text-white">100%</h1>
-            <p className="font-poppinsbold text-4xl italic text-center  text-white"> ORGANICO</p>
+            <p className="font-poppinsbold text-4xl italic text-center  text-white"> ORGÁNICOS</p>
           </div>
         </div>
       </div>
