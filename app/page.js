@@ -32,7 +32,7 @@ export default function Home() {
         },
         body: JSON.stringify({
           name_client: name + ' ' + surname,
-          email_client: "marinalexander691@gmail.com",
+          email_client: "logistica@natesexport.com",
           phone_client: phone,
           email_address: email,
           message_subject: "Correo Nuevo",
