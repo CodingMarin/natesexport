@@ -19,11 +19,14 @@ export default function Home() {
       <div className="px-6 lg:px-8 md:pt-12 pt-0">
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-12">
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-[#9ae701] sm:text-6xl font-nature my-4" style={{ textShadow: '2px 2px #000' }}>Productos Organicos</h1>
-            <p className="mt-6 text-sm leading-8 text-slate-100" style={{ textShadow: '1px 1px rgba(0,0,0,0.3)' }}>Somos los exportadores mas grandes a nivel nacional, con productos de alta calidad y diversidad peruana. contamos con asociacion de la camara decomercio limeña.</p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
-              <button onClick={() => router.push('/shop')} className="transition duration-300 rounded-md bg-slate-100 px-3.5 py-2.5 text-sm font-medium text-black shadow-lg hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Comprar ahora</button>
-              <a href="#" className="text-sm font-semibold leading-6 text-slate-100" style={{ textShadow: '1px 1px rgba(0,0,0,0.3)' }}>Nuestro catalogo <span aria-hidden="true">→</span></a>
+            <h1 className="text-6xl leading-snug font-bold tracking-normal text-slate-100 sm:text-7xl sm:leading-none font-nature my-4 drop-shadow-2xl">Productos Organicos</h1>
+            <p className="mt-6 text-sm text-slate-100" style={{ textShadow: '1px 1px rgba(0,0,0,0.3)' }}>Somos los exportadores mas grandes a nivel nacional, con productos de alta calidad y diversidad peruana. contamos con asociacion de la camara decomercio limeña.</p>
+            <div className="mt-10">
+              <button onClick={() => router.push('/shop')} class="transition duration-300 relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-white rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
+                <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-[#00968A] rounded-md group-hover:bg-opacity-0">
+                  Comprar ahora
+                </span>
+              </button>
             </div>
           </div>
         </div>
