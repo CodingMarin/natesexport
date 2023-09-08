@@ -68,6 +68,7 @@ export default function Navigation() {
                                         <button className="mx-1" onClick={() => setIsShowin(isShowing => !isShowing)}>
                                             <div className="space-y-1 group cursor-pointer relative w-4 h-[8px]">
                                                 <span className="transition-all ease-out block h-0.5 bg-slate-300 group-hover:bg-slate-300 w-6"></span>
+                                                <span className="h-px w-6 bg-transparent block"></span>
                                                 <span className="transition-all ease-out block h-0.5 bg-slate-300 group-hover:bg-slate-300 w-6"></span>
                                             </div>
                                         </button>
