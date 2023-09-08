@@ -224,7 +224,7 @@ export default function Home() {
 
             <div className="py-5">
               <label for="message" className="block mb-2 text-sm font-medium text-[#091E42] ">Escribe tu solicitud aqui... *</label>
-              <textarea required id="message" rows="4" value={message} onChange={(e) => setMessage(e.target.value)} className="block p-2.5 w-full text-sm text-[#091E42] bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="Leave a comment..."></textarea>
+              <textarea required id="message" rows="4" value={message} onChange={(e) => setMessage(e.target.value)} className="block p-2.5 w-full text-sm text-[#091E42] bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="Escribe tu solicitud aquí..."></textarea>
             </div>
 
             <p id="helper-text-explanation" className="mt-2 text-sm text-gray-500">Nunca compartiremos sus datos. Lea nuestro <a href="#" class="font-medium text-blue-600 hover:underline">Política de privacidad</a>.</p>
