@@ -63,7 +63,7 @@ export default function Navigation() {
                         </div>
                         <div className="flex items-center gap-5">
                             <div type="button" className="lg:hidden flex order-1">
-                                <div className="flex group items-center justify-between hover:bg-opacity-100 transition duration-500 pl-1.5 md:pl-3 pr-1.5 w-full h-[32px] rounded">
+                                <div className="flex group items-center justify-between hover:bg-opacity-100 transition duration-500 border border-slate-300 pl-1.5 md:pl-3 pr-1.5 w-full h-[32px] rounded">
                                     <div className="flex items-center justify-center">
                                         <button className="mx-1" onClick={() => setIsShowin(isShowing => !isShowing)}>
                                             <div className="space-y-1 group cursor-pointer relative w-4 h-[8px]">
