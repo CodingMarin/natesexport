@@ -35,20 +35,20 @@ export default function Home() {
         </div>
       </div>
       <div className="px-6 py-10 lg:px-8 sm:pt-0 xl:pt-14 w-full relative curved-demo">
-        <div className="flex-col mx-auto max-w-sm">
+        <div className="flex-col mx-auto max-w-sm py-10">
           <div className="flex justify-center ">
-            <div className="w-52 h-auto">
+            <div className="w-60 h-auto">
               <Image
-                src={profilePic}
-                alt="Picture"
+                src="/calidad_natural.png"
+                alt="calidad natural"
                 quality={100}
                 width={500}
                 height={500}
               />
             </div>
           </div>
-          <div className="text-center">
-            <p className="select-none text-sm text-[#091E42] font-medium lg:px-0 px-4">Conoce nuestras especias e insumos que puedes encontrar con nosotros</p>
+          <div className="text-center px-10">
+            <p className="text-sm text-[#091E42] font-medium lg:px-0 px-4">Nuestro compromiso con la calidad es uno de los valores fundamentales de nuestra empresa, y es por eso que trabajamos de manera constante para mantener altos estándares de producción y exportación en todos nuestros productos.</p>
           </div>
         </div>
       </div>

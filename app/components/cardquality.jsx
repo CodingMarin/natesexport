@@ -6,17 +6,15 @@ export default function cardFeatured({ url, title, description }) {
             <div className="w-24 h-auto mx-auto">
                 <Image
                     src={url}
-                    alt="Picture of the author"
+                    alt={title}
                     quality={100}
                     width={500}
                     height={500}
-                    blurDataURL="data:..."
-                    placeholder="blur" // Optional blur-up while loading
                 />
             </div>
             <div className="px-6 py-4 text-center">
                 <div className="font-bold text-xl mb-2 text-[#499d91]">{title}</div>
-                <p className="text-gray-800 text-sm pt-4">{description}</p>
+                <p className="text-sm text-[#091E42] font-medium lg:px-0 px-4 pt-4">{description}</p>
             </div>
         </div>
     )
