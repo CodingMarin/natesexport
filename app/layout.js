@@ -5,12 +5,16 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Nates Export',
-  description: 'Somos una empresa encargada de distribuir productos agricolas a nivel nacional e internacional.',
+  description: 'Somos una empresa dedicada a la distribución de productos agrícolas a nivel nacional e internacional, especializada en hongos deshidratados, aceitunas, cúrcuma, café y orégano.',
+  keywords: 'agricultura, productos agrícolas, hongos, aceitunas, cúrcuma, café, orégano',
+  canonical: 'https://natesexport.vercel.app/',
+  robots: "index, follow",
+  author: "Nates Export",
 }
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body className={inter.className} style={{ background: '#fff' }}>
         <div className="absolute z-[-1] h-screen object-contain w-full opacity-75" style={{ backgroundImage: 'linear-gradient(to right bottom, #000000, transparent, transparent, transparent, transparent)' }}></div>
         {children}
