@@ -1,92 +1,99 @@
-'use client'
+"use client"
 
-import Link from 'next/link'
-import Image from 'next/image'
-import { useState, useEffect } from 'react'
+import Link from "next/link"
+import Image from "next/image"
+import { useState, useEffect } from "react"
 
 const links = [
     {
-        label: 'Inicio',
-        route: '/'
+        label: "Inicio",
+        route: "/"
     },
     {
-        label: 'Tienda',
-        route: '/shop'
+        label: "Tienda",
+        route: "/shop"
     },
     {
-        label: 'Sobre nosotros',
-        route: '/about'
+        label: "Sobre nosotros",
+        route: "/about"
     },
     {
-        label: 'Donde comprar',
-        route: '/sale'
+        label: "Donde comprar",
+        route: "/sale"
     },
     {
-        label: 'Blog',
-        route: '/blog'
+        label: "Blog",
+        route: "/blog"
     }
 
 ]
 
-export default function Navigation() {
+function classNames(...classes) {
+    return classes.filter(Boolean).join("")
+}
 
+export default function Navigation() {
+    const [isShowing, setIsShowin] = useState(true)
     const [scrolling, setScrolling] = useState(false)
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY >= 300) {
+            if (window.scrollY >= 700) {
                 setScrolling(true)
             } else {
                 setScrolling(false)
             }
         }
 
-        window.addEventListener('scroll', handleScroll)
+        window.addEventListener("scroll", handleScroll)
 
         return () => {
-            window.removeEventListener('scroll', handleScroll)
+            window.removeEventListener("scroll", handleScroll)
         }
     }, [])
     return (
-        <div className="transition-all  lg:bg-transparent bg-emerald-600">
-            <div className="sticky top-0 overflow-hidden">
-                <nav className="h-16">
-                    <div className="px-5 max-w-7xl mx-auto flex gap-3 justify-between lg:justify-center items-center h-full w-full">
+        <div className="lg:static sticky top-0 z-10">
+            <div className="overflow-hidden">
+                <nav className={classNames(scrolling ? "bg-white z-40 transition duration-1000" : "backdrop-blur backdrop-filter bg-opacity-75 transition duration-1000", "h-[60px] lg:py-0 py-2")}>
+                    < div className="px-5 max-w-7xl mx-auto flex gap-3 justify-between lg:justify-center items-center h-full w-full" >
                         <div className="visible">
                             <a className="flex items-center" href="/">
-                                <Image className="drop-shadow-lg animate-pulse" src="/logo.png" alt="logo" quality={100} width={38} height={38}></Image>
+                                <Image className="drop-shadow-lg" src="/logo.png" alt="logo" quality={100} width={38} height={38}></Image>
                             </a>
                         </div>
-                        <div className="flex items-center gap-6">
+                        <div className="flex items-center gap-5">
                             <div type="button" className="lg:hidden flex order-1">
-                                <div className=" flex group items-center justify-between hover:bg-opacity-100 border transition border-slate-100 pl-1.5 md:pl-3 pr-1.5 w-full h-[32px] rounded text-lighter ">
+                                <div className="flex group items-center justify-between hover:bg-opacity-100 border transition duration-500 border-slate-300 pl-1.5 md:pl-3 pr-1.5 w-full h-[32px] rounded">
                                     <div className="flex items-center justify-center">
-                                        <button className="mx-1">
+                                        <button className="mx-1" onClick={() => setIsShowin(isShowing => !isShowing)}>
                                             <div className="space-y-1 group cursor-pointer relative w-4 h-[8px]">
-                                                <span className="transition-all ease-out block h-px bg-slate-200 group-hover:bg-slate-100 w-4 group-hover:w-4"></span>
-                                                <span className="transition-all ease-out block h-px bg-slate-200 group-hover:bg-slate-100 w-4 group-hover:w-4"></span>
-                                                <span className="transition-all ease-out block h-px bg-slate-200 group-hover:bg-slate-100 w-4 group-hover:w-4"></span>
+                                                <span className="transition-all ease-out block h-px bg-slate-300 group-hover:bg-slate-300 w-4"></span>
+                                                <span className="transition-all ease-out block h-px bg-slate-300 group-hover:bg-slate-300 w-4"></span>
+                                                <span className="transition-all ease-out block h-px bg-slate-300 group-hover:bg-slate-300 w-3"></span>
                                             </div>
                                         </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="hidden lg:flex grow items-center justify-center gap-3 drop-shadow-lg text-sm">
+                        <div className="hidden lg:flex grow items-center mx-auto w-full content-center justify-center gap-3 drop-shadow-lg">
                             {links.map((link, i) => (
-                                <div key={i} className="relative justify-center cursor-pointer inline-flex items-center space-x-2 text-center font-regular ease-out duration-200 rounded-md outline-none transition-all outline-0 focus-visible:outline-4 focus-visible:outline-offset-1 border text-scale-1200 hover:bg-scale-500 shadow-none focus-visible:outline-scale-700 border-transparent px-2.5 py-1">
-                                    <Link href={link.route}>
-                                        <span className="truncate text-white hover:text-[#9ae701] transition duration-300">{link.label}</span>
+                                <div key={i} className="relative justify-center cursor-pointer inline-flex items-center space-x-2 text-center font-light ease-out duration-200 outline-none transition-all outline-0 border hover:bg-scale-500 shadow-none border-transparent px-2.5 py-1">
+                                    <Link href={link.route} className="truncate text-white hover:text-slate-300 transition duration-300 text-[0.813rem]">
+                                        {link.label}
                                     </Link>
                                 </div>
                             ))}
                         </div>
-                        <div className="lg:flex hidden items-center justify-end text-sm">
-                            <select className="border border-slate-100 rounded-md px-1 py-1 text-white bg-transparent">
-                                <option className="">English</option>
-                                <option className="">Spanish</option>
-                                <option className="">Portugues</option>
-                            </select>
+                        <div className="lg:flex hidden items-center justify-end">
+                            <Image
+                                className="drop-shadow-md h-14 w-44"
+                                src="/logo-ccl-2023.png"
+                                alt="CCLIMA"
+                                width={600}
+                                height={600}
+                                priority
+                            />
                         </div>
                     </div>
                 </nav>
