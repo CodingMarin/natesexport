@@ -69,7 +69,7 @@ export default function Home() {
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-12">
           <div className="text-center">
             <h1 className="select-none text-6xl leading-snug font-bold tracking-normal text-slate-100 sm:text-7xl sm:leading-none font-nature my-4 drop-shadow-2xl">Productos Orgánicos</h1>
-            <p className="select-none mt-6 text-sm text-slate-100 lg:font-normal font-medium lg:px-0 px-4" style={{ textShadow: '1px 1px rgba(0,0,0,0.3)' }}>Somos los exportadores más grandes a nivel nacional, con productos de alta calidad y diversidad peruana. Contamos con asociación de la Cámara de Comercio de Lima.</p>
+            <p className="select-none mt-6 text-sm text-slate-100 lg:font-normal font-medium lg:px-0 px-4" style={{ textShadow: '1px 1px rgba(0,0,0,0.3)' }}>Somos una empresa dedicada a la distribución de productos agrícolas a nivel nacional e internacional, especializada en hongos deshidratados, aceitunas, cúrcuma, café y orégano. Nuestra pasión por la agricultura sostenible y de alta calidad nos ha llevado a establecer sólidas relaciones con productores y agricultores de confianza en todo el mundo. Contamos con asociación de la Cámara de Comercio de Lima.</p>
             <div className="mt-10">
               <button onClick={() => router.push('/shop')} class="transition duration-300 relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-slate-300 rounded-lg group bg-gradient-to-br from-green-400 to-[#00968A] group-hover:from-green-400 group-hover:to-blue-600 hover:text-white focus:outline-none">
                 <span class="select-none relative px-5 py-2.5 transition-all ease-in duration-75 rounded-md group-hover:bg-opacity-0">
