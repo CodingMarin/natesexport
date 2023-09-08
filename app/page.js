@@ -8,13 +8,13 @@ import Footer from '@/components/footer'
 import Preloader from '@/components/preloader'
 import { useRouter } from 'next/navigation'
 import { useState } from 'react'
+import { Toaster, toast } from 'sonner'
 
 export default function Home() {
   const router = useRouter()
   const [name, setName] = useState("")
   const [phone, setPhone] = useState("")
   const [email, setEmail] = useState("")
-  const [asunto, setAsunto] = useState("")
   const [message, setMessage] = useState("")
   const [surname, setSurname] = useState("")
 
@@ -40,8 +40,12 @@ export default function Home() {
         })
       })
 
-      const data = await response.json()
-      console.log('Response:', data)
+      if (response.status === 200) {
+        toast.success("Datos enviados 🥳")
+      } else {
+        toast.error("¡Ups!, algo salio mal. 😢")
+      }
+
     } catch (error) {
       console.error('Error:', error)
     }
@@ -49,6 +53,7 @@ export default function Home() {
 
   return (
     <main className="">
+      <Toaster richColors position="top-center" />
       <video poster="/bg.png" className="absolute z-[-2] h-screen object-cover" autoPlay loop muted>
         <source src="/bg.mp4" type="video/mp4"></source>
         <source src="/bg.webm" type="video/webm"></source>
@@ -200,20 +205,20 @@ export default function Home() {
             <div className="py-4">
               <label for="telefono" className="text-sm text-[#091E42] font-medium">Telefono / Correo</label>
               <div className="grid lg:grid-cols-2 grid-cols-1 gap-5 justify-center">
-                <input type="tel" id="telefono" aria-describedby="helper-text-explanation" onChange={(e) => setPhone(e.target.value)} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2.5 focus:outline-none" placeholder="Telefono" autoComplete="off" />
-                <input type="email" id="email" aria-describedby="helper-text-explanation" onChange={(e) => setEmail(e.target.value)} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2.5 focus:outline-none" placeholder="example@gmail.com" autoComplete="off" />
+                <input required type="tel" id="telefono" aria-describedby="helper-text-explanation" onChange={(e) => setPhone(e.target.value)} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2.5 focus:outline-none" placeholder="Telefono" autoComplete="off" />
+                <input required type="email" id="email" aria-describedby="helper-text-explanation" onChange={(e) => setEmail(e.target.value)} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2.5 focus:outline-none" placeholder="example@gmail.com" autoComplete="off" />
               </div>
             </div>
 
             <label for="name" className="pb-4 text-sm text-[#091E42] font-medium">Nombres / Apellidos</label>
             <div className="grid lg:grid-cols-2 grid-cols-1 gap-5 justify-center">
-              <input type="text" id="name" aria-describedby="helper-text-explanation" onChange={(e) => setName(e.target.value)} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2.5 focus:outline-none" placeholder="Nombres" autoComplete="off" />
-              <input type="text" id="surname" aria-describedby="helper-text-explanation" onChange={(e) => setSurname(e.target.value)} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2.5 focus:outline-none" placeholder="Apellidos" autoComplete="off" />
+              <input required type="text" id="name" aria-describedby="helper-text-explanation" onChange={(e) => setName(e.target.value)} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2.5 focus:outline-none" placeholder="Nombres" autoComplete="off" />
+              <input  required type="text" id="surname" aria-describedby="helper-text-explanation" onChange={(e) => setSurname(e.target.value)} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2.5 focus:outline-none" placeholder="Apellidos" autoComplete="off" />
             </div>
 
             <div className="py-5">
               <label for="message" className="block mb-2 text-sm font-medium text-[#091E42] ">Escribe tu solicitud aqui... *</label>
-              <textarea id="message" rows="4" onChange={(e) => setMessage(e.target.value)} className="block p-2.5 w-full text-sm text-[#091E42] bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Leave a comment..."></textarea>
+              <textarea required id="message" rows="4" onChange={(e) => setMessage(e.target.value)} className="block p-2.5 w-full text-sm text-[#091E42] bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Leave a comment..."></textarea>
             </div>
 
             <p id="helper-text-explanation" className="mt-2 text-sm text-gray-500">We’ll never share your details. Read our <a href="#" class="font-medium text-blue-600 hover:underline dark:text-blue-500">Privacy Policy</a>.</p>
