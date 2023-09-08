@@ -13,7 +13,7 @@ export default function cardFeatured({ url, title, description }) {
                 />
             </div>
             <div className="px-6 py-4 text-center">
-                <div className="font-bold text-xl mb-2 text-[#499d91]">{title}</div>
+                <h1 className="font-bold text-lg mb-2 text-[#499d91] font-poppinsmedium">{title}</h1>
                 <p className="text-sm text-[#091E42] font-medium lg:px-0 px-4 pt-4">{description}</p>
             </div>
         </div>
