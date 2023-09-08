@@ -7,7 +7,7 @@ import Slider from '@/components/slider'
 import Footer from '@/components/footer'
 import Preloader from '@/components/preloader'
 import { useRouter } from 'next/navigation'
-import { useState } from 'react'
+import { lazy, useState } from 'react'
 import { Toaster, toast } from 'sonner'
 
 export default function Home() {
@@ -156,13 +156,14 @@ export default function Home() {
           <p className="font-poppinsbold lg:text-4xl text-3xl italic text-center  text-white">ESPECIAS Y <br></br> CONDIMENTOS</p>
           <div className="lg:w-96 w-72 h-auto mx-auto">
             <Image
-              src="/especias_condimentos_.png"
-              alt="Picture of the author"
+              title="Especias y condimentos"
+              src="/especias_condimentos_.webp"
+              alt="picture"
               quality={100}
               width={500}
               height={500}
-              blurDataURL="data:..."
-              placeholder="blur" // Optional blur-up while loading
+              priority
+              loading="lazy"
             />
           </div>
           <div className="hidden lg:block">
