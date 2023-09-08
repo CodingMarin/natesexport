@@ -58,6 +58,10 @@ const Slider = () => {
             <div className="pb-2 bg-transparent" id="owl-carousel-products">
                 <ul id="owl-carousel-ul" className="owl-carousel owl-loaded owl-drag">
                     <OwlCarousel className="owl-theme" loop margin={4} nav={true}
+                        navText={[
+                            "",
+                            "",
+                        ]}
                         dots={false}
                         animateIn={true}
                         {...options}
