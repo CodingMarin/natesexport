@@ -85,11 +85,14 @@ export default function Home() {
           <div className="flex justify-center ">
             <div className="w-60 h-auto">
               <Image
-                src="/calidad_natural.png"
-                alt="calidad natural"
+                src="/prod_org.webp"
+                title="Calidad natural"
+                alt="picture"
                 quality={100}
                 width={500}
                 height={500}
+                priority
+                loading="lazy"
               />
             </div>
           </div>
@@ -107,12 +110,13 @@ export default function Home() {
             <div className="w-60 h-auto">
               <Image
                 src="/calidad_natural.png"
+                title="Calidad natural"
                 alt="Picture of the author"
                 quality={100}
                 width={500}
                 height={500}
-                blurDataURL="data:..."
-                placeholder="blur" // Optional blur-up while loading
+                priority
+                loading="lazy"
               />
             </div>
           </div>
