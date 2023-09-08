@@ -17,7 +17,7 @@ export default function Product() {
 
     useEffect(() => {
         switch (params.item) {
-            case 'oregano-organico':
+            case 'oregano':
                 setUrl('/oregano_extra_min.jpg')
                 setName('Oregano Orgánico')
                 setDescription("Descubre la esencia de la tierra fértil de Tacna, Perú, encapsulada en cada fragante hoja de nuestro exquisito orégano. Cultivado con cuidado en los altos valles de la región, nuestro producto representa la perfecta armonía entre el clima soleado y los suelos ricos, resultando en un orégano de sabor y aroma inigualables. Con cada pizca, te transportarás a los campos ondulantes de Tacna.")
@@ -195,9 +195,9 @@ export default function Product() {
                     </div>
                 )
                 break
-            case 'aceitunas-peruanas':
+            case 'aceitunas':
                 setUrl('/aceitunas_peruanas.jpg')
-                setName('Aceitunas Peruanas')
+                setName('Aceitunas')
                 setDescription("Sumérgete en la esencia de los campos soleados de Perú con cada bocado de nuestras exquisitas aceitunas. Producidas con dedicación y cuidado en armonía con la naturaleza, nuestras aceitunas capturan la riqueza de la tierra y el clima únicos de la región. Cada fruto es un testimonio de la herencia gastronómica peruana, un equilibrio perfecto entre tradición y calidad. Desde el primer mordisco, te transportarás a los olivares que se mecen suavemente en la brisa costera, ofreciendo una experiencia culinaria que celebra la autenticidad y el sabor incomparable de las aceitunas peruanas.")
                 setWidget(
                     <div className="border w-100 py-2 px-2 my-5 rounded-sm">
@@ -312,7 +312,7 @@ export default function Product() {
                     </div>
                 )
                 break
-            case 'hongo-deshidratado':
+            case 'hongo':
                 setUrl('/hongo_deshidratado_min.jpg')
                 setName('Hongo Deshidratado')
                 setDescription("Nuestros hongos deshidratados, cultivados y cuidadosamente recolectados en las prístinas tierras de Perú, representan la esencia misma de la biodiversidad andina en cada delicada pieza. Con un proceso de deshidratación de vanguardia que conserva su frescura y perfil nutricional, nuestros hongos son el testimonio de la perfección natural que solo se encuentra en los bosques peruanos. Listos para conquistar los paladares internacionales, cada bolsa de nuestros hongos deshidratados es un pasaporte hacia una experiencia gastronómica excepcional, llevando la riqueza de la naturaleza peruana a las mesas de todo el mundo.")
@@ -399,9 +399,9 @@ export default function Product() {
                     </div>
                 )
                 break
-            case 'cafe-peruano':
+            case 'cafe':
                 setUrl('/cafe_peruano.jpg')
-                setName('Café Peruano')
+                setName('Café')
                 setWidget(
                     <div className="border w-100 py-2 px-2 my-5 rounded-sm">
                         <div className="pb-5">
