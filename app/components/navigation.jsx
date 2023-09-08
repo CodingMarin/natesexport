@@ -62,10 +62,10 @@ export default function Navigation() {
                                 <div className=" flex group items-center justify-between hover:bg-opacity-100 border transition border-slate-100 pl-1.5 md:pl-3 pr-1.5 w-full h-[32px] rounded text-lighter ">
                                     <div className="flex items-center justify-center">
                                         <button className="mx-1">
-                                            <div class="space-y-1 group cursor-pointer relative w-4 h-[8px]">
-                                                <span class="transition-all ease-out block h-px bg-slate-200 group-hover:bg-slate-100 w-4 group-hover:w-4"></span>
-                                                <span class="transition-all ease-out block h-px bg-slate-200 group-hover:bg-slate-100 w-4 group-hover:w-4"></span>
-                                                <span class="transition-all ease-out block h-px bg-slate-200 group-hover:bg-slate-100 w-4 group-hover:w-4"></span>
+                                            <div className="space-y-1 group cursor-pointer relative w-4 h-[8px]">
+                                                <span className="transition-all ease-out block h-px bg-slate-200 group-hover:bg-slate-100 w-4 group-hover:w-4"></span>
+                                                <span className="transition-all ease-out block h-px bg-slate-200 group-hover:bg-slate-100 w-4 group-hover:w-4"></span>
+                                                <span className="transition-all ease-out block h-px bg-slate-200 group-hover:bg-slate-100 w-4 group-hover:w-4"></span>
                                             </div>
                                         </button>
                                     </div>
