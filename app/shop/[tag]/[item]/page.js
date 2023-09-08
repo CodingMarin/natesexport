@@ -13,12 +13,14 @@ export default function Product() {
     const [url, setUrl] = useState('')
     const [name, setName] = useState('')
     const [widget, setWidget] = useState(null)
+    const [description, setDescription] = useState('')
 
     useEffect(() => {
         switch (params.item) {
             case 'oregano-organico':
                 setUrl('/oregano_extra_min.jpg')
                 setName('Oregano Orgánico')
+                setDescription("Descubre la esencia de la tierra fértil de Tacna, Perú, encapsulada en cada fragante hoja de nuestro exquisito orégano. Cultivado con cuidado en los altos valles de la región, nuestro producto representa la perfecta armonía entre el clima soleado y los suelos ricos, resultando en un orégano de sabor y aroma inigualables. Con cada pizca, te transportarás a los campos ondulantes de Tacna.")
                 setWidget(<div className="border w-100 py-2 px-2 my-5 rounded-sm">
                     <div className="pb-5">
                         <h3 className="text-sm uppercase font-semibold">COMPOSICÍON / INGREDIENTES</h3>
@@ -111,6 +113,7 @@ export default function Product() {
             case 'curcuma':
                 setUrl('/curcuma_peruana.jpg')
                 setName('Cúrcuma')
+                setDescription("Descubre el alma misma de la tierra peruana en cada brillo dorado de nuestro producto de cúrcuma.Cultivada con pasión y sabiduría ancestral en los mágicos campos de Perú, nuestra cúrcuma encarna la esencia de la naturaleza en su forma más vibrante.Cada raíz es un tesoro de beneficios para la salud, cuidadosamente cosechada y preparada para llevar a tu vida una explosión de sabor y vitalidad.Experimenta el legado de generaciones en cada cucharadita, mientras elevas tus platos y nutres tu cuerpo con la autenticidad única que solo nuestra cúrcuma peruana puede brindar.")
                 setWidget(
                     <div className="border w-100 py-2 px-2 my-5 rounded-sm">
                         <div className="mb-4">
@@ -195,6 +198,7 @@ export default function Product() {
             case 'aceitunas-peruanas':
                 setUrl('/aceitunas_peruanas.jpg')
                 setName('Aceitunas Peruanas')
+                setDescription("Sumérgete en la esencia de los campos soleados de Perú con cada bocado de nuestras exquisitas aceitunas. Producidas con dedicación y cuidado en armonía con la naturaleza, nuestras aceitunas capturan la riqueza de la tierra y el clima únicos de la región. Cada fruto es un testimonio de la herencia gastronómica peruana, un equilibrio perfecto entre tradición y calidad. Desde el primer mordisco, te transportarás a los olivares que se mecen suavemente en la brisa costera, ofreciendo una experiencia culinaria que celebra la autenticidad y el sabor incomparable de las aceitunas peruanas.")
                 setWidget(
                     <div className="border w-100 py-2 px-2 my-5 rounded-sm">
                         <div className="mb-4">
@@ -311,6 +315,7 @@ export default function Product() {
             case 'hongo-deshidratado':
                 setUrl('/hongo_deshidratado_min.jpg')
                 setName('Hongo Deshidratado')
+                setDescription("Nuestros hongos deshidratados, cultivados y cuidadosamente recolectados en las prístinas tierras de Perú, representan la esencia misma de la biodiversidad andina en cada delicada pieza. Con un proceso de deshidratación de vanguardia que conserva su frescura y perfil nutricional, nuestros hongos son el testimonio de la perfección natural que solo se encuentra en los bosques peruanos. Listos para conquistar los paladares internacionales, cada bolsa de nuestros hongos deshidratados es un pasaporte hacia una experiencia gastronómica excepcional, llevando la riqueza de la naturaleza peruana a las mesas de todo el mundo.")
                 setWidget(
                     <div className="border w-100 py-2 px-2 my-5 rounded-sm">
                         <div className="pb-5">
@@ -472,7 +477,7 @@ export default function Product() {
                 <div className="">
                     <h3 className="text-left uppercase text-sm font-semibold">{name}</h3>
                     <div className="py-5">
-                        <p className="text-sm text-gray-500">Product description. Ideal place to add more details about your product such as its size, materials, instructions for use and maintenance.</p>
+                        <p className="text-sm text-gray-500">{description}</p>
                         <p className="pt-5 text-xs font-light text-black">🚛 Hacemos envios al por mayor a todo el Perú y nivel internacional con previa coordinación. Para ello deberán enviarnos sus datos completos para poder realizar el envio correspondiente.</p>
                     </div>
                     <button type="submit" onClick={() => router.push('https://api.whatsapp.com/send/?phone=961361759&text=YOUR_MESSAGE')} className="sm:w-auto w-full text-white bg-[#499d91] hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Comprar ahora</button>

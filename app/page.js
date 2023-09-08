@@ -80,7 +80,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="px-6 py-10 lg:px-8 sm:pt-0 xl:pt-14 w-full relative curved-demo">
+      <div className="px-4 py-10 lg:px-8 sm:pt-0 xl:pt-14 w-full relative curved-demo">
         <div className="flex-col mx-auto max-w-sm py-10">
           <div className="flex justify-center ">
             <div className="w-60 h-auto">
