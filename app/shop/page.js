@@ -6,17 +6,17 @@ export default function Shop() {
             <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-6xl sm:mx-auto mx-auto w-full justify-center gap-5">
                 <ShopCard
                     picture={'/oregano_extra_min.jpg'}
-                    title={'Oregano Organico'}
+                    title={'Orégano Orgánico'}
                     url={'/shop/product/oregano-organico'}
                 />
                 <ShopCard
                     picture={'/curcuma_peruana.jpg'}
-                    title={'Curcuma Peruana'}
+                    title={'Cúrcuma'}
                     url={'/shop/product/curcuma'}
                 />
                 <ShopCard
                     picture={'/aceitunas_peruanas.jpg'}
-                    title={'Aceitunas Peruanas'}
+                    title={'Aceitunas'}
                     url={'/shop/product/aceitunas-peruanas'}
                 />
                 <ShopCard
@@ -26,7 +26,7 @@ export default function Shop() {
                 />
                 <ShopCard
                     picture={'/cafe_peruano.jpg'}
-                    title={'Café Organico'}
+                    title={'Café Orgánico'}
                     url={'/shop/product/cafe-peruano'}
                 />
             </div>
