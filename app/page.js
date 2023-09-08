@@ -40,6 +40,12 @@ export default function Home() {
         })
       })
 
+      setName("")
+      setPhone("")
+      setEmail("")
+      setSurname("")
+      setMessage("")
+
       if (response.status === 200) {
         toast.success("Datos enviados 🥳")
       } else {
