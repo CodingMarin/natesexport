@@ -40,17 +40,15 @@ export default function Home() {
             <div className="w-52 h-auto">
               <Image
                 src={profilePic}
-                alt="Picture of the author"
+                alt="Picture"
                 quality={100}
                 width={500}
                 height={500}
-                blurDataURL="data:..."
-                placeholder="blur" // Optional blur-up while loading
               />
             </div>
           </div>
           <div className="text-center">
-            <p className="text-sm text-gray-700">Conoce nuestras especias e insumos que puedes encontrar con nosotros</p>
+            <p className="select-none text-sm text-[#091E42] font-medium lg:px-0 px-4">Conoce nuestras especias e insumos que puedes encontrar con nosotros</p>
           </div>
         </div>
       </div>
