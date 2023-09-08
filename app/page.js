@@ -14,7 +14,10 @@ export default function Home() {
 
   return (
     <main className="">
-      <video className="absolute z-[-2] h-screen object-cover" src="/bg.mp4" autoPlay loop></video>
+      <video poster="/bg.png" className="absolute z-[-2] h-screen object-cover" autoPlay loop muted>
+        <source src="/bg.mp4" type="video/mp4"></source>
+        <source src="/bg.webm" type="video/webm"></source>
+      </video>
       <Navigation></Navigation>
       <div className="px-6 lg:px-8 md:pt-12 pt-0">
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-12">
