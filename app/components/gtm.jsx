@@ -1,8 +1,8 @@
-'use client'
+"use client"
 
-import { useEffect } from 'react';
+import { useEffect } from "react"
 
-export default GoogleTagManager = () => {
+const GoogleTagManager = () => {
     useEffect(() => {
         const script = document.createElement('script');
         script.src = `https://www.googletagmanager.com/gtm.js?id=GTM-T67CT6C8`;
@@ -18,5 +18,7 @@ export default GoogleTagManager = () => {
     }, []);
 
     return null;
-};
+}
+
+export default GoogleTagManager
 
