@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
         <Gtm />
         {children}
         <noscript>
-          <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T67CT6C8" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+          <iframe className="invisible hidden" src="https://www.googletagmanager.com/ns.html?id=GTM-T67CT6C8" height="0" width="0"></iframe>
         </noscript>
       </body>
     </html>
