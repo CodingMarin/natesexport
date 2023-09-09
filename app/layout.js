@@ -1,4 +1,4 @@
-import Gtm from './components/gtm'
+import Gtm from '@/components/gtm'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
