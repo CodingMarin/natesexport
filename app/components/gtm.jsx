@@ -11,8 +11,8 @@ const GoogleTagManager = () => {
 
         script.onload = () => {
             const noscript = document.createElement('noscript');
-            noscript.innerHTML = `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T67CT6C8"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe>`;
+            noscript.innerHTML = `<iframe className="invisible hidden" src="https://www.googletagmanager.com/ns.html?id=GTM-T67CT6C8"
+        height="0" width="0"></iframe>`;
             document.body.appendChild(noscript);
         };
     }, []);
