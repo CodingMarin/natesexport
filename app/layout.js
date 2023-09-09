@@ -1,4 +1,3 @@
-import Gtm from '@/components/gtm'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
@@ -18,11 +17,7 @@ export default function RootLayout({ children }) {
     <html lang="es">
       <body className={inter.className} style={{ background: '#fff' }}>
         <div className="absolute z-[-1] h-screen object-contain w-full opacity-75" style={{ backgroundImage: 'linear-gradient(to right bottom, #000000, transparent, transparent, transparent, transparent)' }}></div>
-        <Gtm />
         {children}
-        <noscript>
-          <iframe className="invisible hidden" src="https://www.googletagmanager.com/ns.html?id=GTM-T67CT6C8" height="0" width="0"></iframe>
-        </noscript>
       </body>
     </html>
   )
