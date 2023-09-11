@@ -287,10 +287,6 @@ export default function Product() {
                             </table>
                         </div>
                         <div className="">
-                            <h3 className="text-sm uppercase font-semibold">TRATAMIENTO DE CONSERVACIÓN</h3>
-                            <p className="text-sm text-gray-500">•El hongo procesado se conserva porque está desecado, la baja humedad que contiene permite su conservacíon.</p>
-                        </div>
-                        <div className="my-5">
                             <h3 className="text-sm uppercase font-semibold">PRESENTACIÓN</h3>
                             <table className="table-fixed text-sm text-gray-500 my-1">
                                 <tbody>
@@ -305,7 +301,7 @@ export default function Product() {
                                 </tbody>
                             </table>
                         </div>
-                        <div className="">
+                        <div className="my-5">
                             <h3 className="text-sm uppercase font-semibold">VIDA UTIL</h3>
                             <p className="text-sm text-gray-500">24 meses desde la fecha de envasado</p>
                         </div>

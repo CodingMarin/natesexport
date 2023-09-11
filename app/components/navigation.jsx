@@ -58,7 +58,16 @@ export default function Navigation() {
                     < div className="px-5 max-w-7xl mx-auto flex gap-3 justify-between lg:justify-center items-center h-full w-full" >
                         <div className="visible">
                             <a className="flex items-center" href="/">
-                                <Image className="drop-shadow-lg" src="/logo.png" alt="logo" quality={100} width={38} height={38}></Image>
+                                <Image
+                                    className="drop-shadow-lg w-14"
+                                    title="Nates Export Logo"
+                                    src="/logo.png"
+                                    alt="Logo"
+                                    quality={100}
+                                    width={500}
+                                    height={500}
+                                    loading="lazy"
+                                />
                             </a>
                         </div>
                         <div className="flex items-center gap-5">
