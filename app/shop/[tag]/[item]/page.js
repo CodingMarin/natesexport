@@ -398,6 +398,7 @@ export default function Product() {
             case 'cafe':
                 setUrl('/cafe_peruano.jpg')
                 setName('Café orgánico')
+                setDescription("El café orgánico peruano es una joya de la agricultura sostenible que cautiva los sentidos de amantes del café en todo el mundo. Nuestra empresa se enorgullece de ofrecer este exquisito café en grano de origen peruano, cultivado con pasión y cuidado en las tierras altas de la región. En los campos de cafetales de Perú, nuestros agricultores trabajan en armonía con la naturaleza, evitando el uso de pesticidas y productos químicos. Esto no solo garantiza la pureza de nuestro café, sino que también respalda la biodiversidad local y las comunidades rurales que dependen de la agricultura. Cada grano de café es cosechado a mano con un cuidado meticuloso, seleccionado y procesado con técnicas tradicionales que preservan su sabor auténtico y característico.")
                 setWidget(
                     <div className="border w-100 py-2 px-2 my-5 rounded-sm">
                         <div className="pb-5">
