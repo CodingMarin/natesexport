@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
     <html lang="es">
       <head>
         <link
-          rel="shortcut icon"
+          rel="icon"
           href="/favicon.svg"
         />
         <link
