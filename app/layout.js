@@ -16,10 +16,6 @@ export default function RootLayout({ children }) {
     <html lang="es">
       <head>
         <link
-          rel="icon"
-          href="/favicon.svg"
-        />
-        <link
           rel="canonical"
           href="https://natesexport.com/shop"
           key="canonical"
