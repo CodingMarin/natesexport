@@ -69,13 +69,13 @@ export default function Home() {
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-12">
           <div className="text-center">
             <h1 className="select-none text-6xl leading-snug font-bold tracking-normal text-slate-100 sm:text-7xl sm:leading-none font-nature my-4 drop-shadow-2xl">Productos Orgánicos</h1>
-            <p className="select-none mt-6 text-sm text-slate-100 lg:font-normal font-medium lg:px-0 px-4" style={{ textShadow: '1px 1px rgba(0,0,0,0.3)' }}>Somos una empresa dedicada a la distribución de productos agrícolas a nivel nacional e internacional, especializada en hongos deshidratados, aceitunas, cúrcuma, café y orégano. Nuestra pasión por la agricultura sostenible y de alta calidad nos ha llevado a establecer sólidas relaciones con productores y agricultores de confianza en todo el mundo. Contamos con asociación de la Cámara de Comercio de Lima.</p>
+            <h2 className="mt-6 text-sm text-slate-100 lg:px-0 px-4" style={{ textShadow: '1px 1px rgba(0,0,0,0.3)' }}>Somos una empresa dedicada a la distribución de productos agrícolas a nivel nacional e internacional, especializada en hongos deshidratados, aceitunas, cúrcuma, café y orégano. Nuestra pasión por la agricultura sostenible y de alta calidad nos ha llevado a establecer sólidas relaciones con productores y agricultores de confianza en todo el mundo. Contamos con asociación de la Cámara de Comercio de Lima.</h2>
             <div className="mt-10">
-              <button onClick={() => router.push('/shop')} class="transition duration-300 relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-slate-300 rounded-lg group bg-gradient-to-br from-green-400 to-[#00968A] group-hover:from-green-400 group-hover:to-blue-600 hover:text-white focus:outline-none">
+              <a href="/shop" class="transition duration-300 relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-slate-300 rounded-lg group bg-gradient-to-br from-green-400 to-[#00968A] group-hover:from-green-400 group-hover:to-blue-600 hover:text-white focus:outline-none">
                 <span class="select-none relative px-5 py-2.5 transition-all ease-in duration-75 rounded-md group-hover:bg-opacity-0">
                   Comprar ahora
                 </span>
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -97,7 +97,7 @@ export default function Home() {
             </div>
           </div>
           <div className="text-center px-10">
-            <p className="text-sm text-[#091E42] font-medium lg:px-0 px-4">Nuestro compromiso con la calidad es uno de los valores fundamentales de nuestra empresa, y es por eso que trabajamos de manera constante para mantener altos estándares de producción y exportación en todos nuestros productos.</p>
+            <h3 className="text-sm text-[#091E42] font-medium lg:px-0 px-4">Nuestro compromiso con la calidad es uno de los valores fundamentales de nuestra empresa, y es por eso que trabajamos de manera constante para mantener altos estándares de producción y exportación en todos nuestros productos.</h3>
           </div>
         </div>
       </div>
@@ -121,7 +121,7 @@ export default function Home() {
             </div>
           </div>
           <div className="text-center px-10">
-            <p className="text-sm text-gray-700">Nuestro compromiso con la calidad es uno de los valores fundamentales de nuestra empresa, y es por eso que trabajamos de manera constante para mantener altos estándares de producción y exportación en todos nuestros productos.</p>
+            <h3 className="text-sm text-gray-700">Nuestro compromiso con la calidad es uno de los valores fundamentales de nuestra empresa, y es por eso que trabajamos de manera constante para mantener altos estándares de producción y exportación en todos nuestros productos.</h3>
           </div>
         </div>
         <div className="pt-10 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-5xl sm:mx-auto mx-auto w-full justify-center gap-y-3 gap-x-10">
