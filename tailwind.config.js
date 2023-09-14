@@ -1,3 +1,5 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -11,15 +13,16 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'gradient-nolinear': 'linear-gradient(to right bottom, #000000, transparent, transparent, transparent, transparent)'
       },
     },
     fontFamily: {
-      'nature': ['Nature-Beauty'],
-      'poppinsbold': ['poppinsbold'],
-      'poppinsmedium': ['poppins_mediumregular'],
-      'poppinsregular': ['poppinsregular'],
-      'poppinssemibold': ['poppins_semiboldregular']
+      nature: ['Nature-Beauty'],
+      sans: ["var(--font-inter)", ...defaultTheme.fontFamily.sans],
+      display: ["var(--font-calsans)"],
     }
   },
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/typography"),
+  ],
 }

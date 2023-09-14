@@ -64,7 +64,7 @@ export default function Home() {
         <source src="/bg.mp4" type="video/mp4"></source>
         <source src="/bg.webm" type="video/webm"></source>
       </video>
-      <Navigation></Navigation>
+      <Navigation />
       <div className="px-6 lg:px-8 md:pt-12 pt-0">
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-12">
           <div className="text-center">
@@ -157,7 +157,7 @@ export default function Home() {
       </div>
       <div className="bg-[rgba(73,157,145,0.4)] bg-no-repeat h-full object-fill" style={{ backgroundImage: "url('/camp_cos.webp')" }}>
         <div className="py-4 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-5xl sm:mx-auto mx-auto w-full justify-center items-center">
-          <p className="font-poppinsbold lg:text-4xl text-3xl italic text-center  text-white">ESPECIAS Y <br></br> CONDIMENTOS</p>
+          <p className="font-bold lg:text-4xl text-3xl italic text-center  text-white">ESPECIAS Y <br></br> CONDIMENTOS</p>
           <div className="lg:w-96 w-72 h-auto mx-auto">
             <Image
               title="Especias y condimentos"
@@ -172,13 +172,13 @@ export default function Home() {
           </div>
           <div className="hidden lg:block">
             <h1 className="text-5xl italic font-bold text-center text-white">100%</h1>
-            <p className="font-poppinsbold text-4xl italic text-center  text-white"> ORGÁNICOS</p>
+            <p className="font-bold text-4xl italic text-center  text-white"> ORGÁNICOS</p>
           </div>
         </div>
       </div>
       <div className="bg-[rgba(73,157,145,0.4)] bg-no-repeat object-fill max-h-80 h-full py-20" style={{ backgroundImage: "url('/camp_cos_lima.webp')" }}>
         <div className="py-4 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-5xl sm:mx-auto mx-auto w-full justify-center items-center">
-          <p className="font-poppinsbold lg:text-4xl text-3xl text-center text-white">Aliados</p>
+          <p className="font-bold lg:text-4xl text-3xl text-center text-white">Aliados</p>
           <div className="justify-around hidden lg:flex">
             <div className="w-1 h-20 bg-white"></div>
           </div>
