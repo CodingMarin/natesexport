@@ -1,6 +1,6 @@
 import "../globals.css"
-import { Inter } from "next/font/google"
-import LocalFont from "next/font/local";
+import { Inter } from "@next/font/google"
+import LocalFont from "@next/font/local";
 
 export const metadata = {
   title: {
