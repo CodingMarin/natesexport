@@ -1,31 +1,18 @@
 "use client"
 
+import { Fragment } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { useState, useEffect } from "react"
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
+import { Disclosure, Menu, Transition } from "@headlessui/react"
 
 const links = [
-    {
-        label: "Inicio",
-        route: "/"
-    },
-    {
-        label: "Tienda",
-        route: "/shop"
-    },
-    {
-        label: "Sobre nosotros",
-        route: "#"
-    },
-    {
-        label: "Donde comprar",
-        route: "#"
-    },
-    {
-        label: "Blog",
-        route: "#"
-    }
-
+    { label: "Inicio", route: "/" },
+    { label: "Tienda", route: "/shop" },
+    { label: "Sobre nosotros", route: "#" },
+    { label: "Donde comprar", route: "#" },
+    { label: "Blog", route: "#" }
 ]
 
 function classNames(...classes) {
@@ -33,7 +20,6 @@ function classNames(...classes) {
 }
 
 export default function Navigation() {
-    const [isShowing, setIsShowin] = useState(true)
     const [scrolling, setScrolling] = useState(false)
 
     useEffect(() => {
@@ -52,89 +38,93 @@ export default function Navigation() {
         }
     }, [])
     return (
-        <>
-            <div className="lg:static sticky top-0 z-10">
-                <div className="overflow-hidden">
-                    <nav className={classNames(scrolling ? "bg-white z-40 transition duration-1000" : "backdrop-blur backdrop-filter bg-opacity-75 transition duration-1000", "h-[60px] lg:py-0 py-2")}>
-                        < div className="px-5 max-w-7xl mx-auto flex gap-3 justify-between lg:justify-center items-center h-full w-full" >
-                            <div className="visible">
-                                <a className="flex items-center" href="https://natesexport.com/">
+        <Disclosure as="nav" className="lg:static sticky top-0 z-10">
+            {({ open }) => (
+                <>
+                    <div className="overflow-hidden">
+                        <div className={classNames(scrolling ? "bg-white z-40 transition duration-1000" : "transition duration-1000", "h-[60px] lg:py-0 py-2")}>
+                            <div className="px-5 max-w-7xl mx-auto flex gap-3 justify-between lg:justify-center items-center h-full w-full">
+                                <div className="visible">
+                                    <a className="flex items-center" href="https://natesexport.com/">
+                                        <Image
+                                            className="drop-shadow-lg w-14"
+                                            title="Nates Export Logo"
+                                            src="/logo.png"
+                                            alt="Logo"
+                                            quality={100}
+                                            width={500}
+                                            height={500}
+                                            loading="lazy"
+                                        />
+                                    </a>
+                                </div>
+                                <div className="-mr-2 flex items-center sm:hidden">
+                                    <Disclosure.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-offset-2">
+                                        <span className="sr-only">Open main menu</span>
+                                        {open ? (
+                                            <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                                        ) : (
+                                            <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                                        )}
+                                    </Disclosure.Button>
+                                </div>
+                                <div className="hidden lg:flex grow items-center mx-auto w-full content-center justify-center gap-3 drop-shadow-lg">
+                                    {links.map((link, i) => (
+                                        <div key={i} className="relative justify-center cursor-pointer inline-flex items-center space-x-2 text-center font-light ease-out duration-200 outline-none transition-all outline-0 border hover:bg-scale-500 shadow-none border-transparent px-2.5 py-1">
+                                            <Link href={link.route} className="truncate text-white hover:text-slate-300 transition duration-300 text-[0.813rem]">
+                                                {link.label}
+                                            </Link>
+                                        </div>
+                                    ))}
+                                </div>
+                                <div className="lg:flex hidden items-center justify-end">
                                     <Image
-                                        className="drop-shadow-lg w-14"
-                                        title="Nates Export Logo"
-                                        src="/logo.png"
-                                        alt="Logo"
-                                        quality={100}
-                                        width={500}
-                                        height={500}
+                                        className="drop-shadow-md h-14 w-44"
+                                        title="Logo CCL"
+                                        src="/logo-ccl-2023.webp"
+                                        alt="logo"
+                                        width={600}
+                                        height={600}
                                         loading="lazy"
                                     />
-                                </a>
+                                </div>
                             </div>
-                            <div className="flex items-center gap-5">
-                                <div type="button" className="lg:hidden flex order-1">
-                                    <div className="flex group items-center justify-between hover:bg-opacity-100 transition duration-500 rounded">
-                                        <div className="flex items-center justify-center">
-                                            <button className="mx-1" onClick={() => setIsShowin(isShowing => !isShowing)}>
-                                                <div className="space-y-1 group cursor-pointer relative w-4 h-[8px]">
-                                                    <span className="transition-all ease-out block h-[1.5px] bg-slate-300 group-hover:bg-slate-300 w-6"></span>
-                                                    <span className="transition-all ease-out block h-[1.5px] bg-slate-300 group-hover:bg-slate-300 w-6"></span>
-                                                    <span className="transition-all ease-out block h-[1.5px] bg-slate-300 group-hover:bg-slate-300 w-5"></span>
-                                                </div>
-                                            </button>
+                        </div>
+                    </div>
+                    <Transition
+                        enter="transition duration-100 ease-out"
+                        enterFrom="transform scale-95 opacity-0"
+                        enterTo="transform scale-100 opacity-100"
+                        leave="transition duration-75 ease-out"
+                        leaveFrom="transform scale-100 opacity-100"
+                        leaveTo="transform scale-95 opacity-0"
+                    >
+                        <Disclosure.Panel className="sm:hidden bg-white  shadow-md h-screen">
+                            <div className="border-t border-gray-200 pt-4 pb-3">
+                                <div className="flex items-center px-4">
+                                    <div className="flex-shrink-0">
+                                    </div>
+                                    <div className="ml-3">
+                                        <div className="text-base font-medium text-gray-800">
+                                        </div>
+                                        <div className="text-sm font-medium text-gray-500">
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="hidden lg:flex grow items-center mx-auto w-full content-center justify-center gap-3 drop-shadow-lg">
-                                {links.map((link, i) => (
-                                    <div key={i} className="relative justify-center cursor-pointer inline-flex items-center space-x-2 text-center font-light ease-out duration-200 outline-none transition-all outline-0 border hover:bg-scale-500 shadow-none border-transparent px-2.5 py-1">
-                                        <Link href={link.route} className="truncate text-white hover:text-slate-300 transition duration-300 text-[0.813rem]">
-                                            {link.label}
-                                        </Link>
-                                    </div>
+                                {links.map((item) => (
+                                    <Disclosure.Button key={item.id} as="a">
+                                        <div className="mt-3 space-y-1">
+                                            <Link href={item.route} className="block px-4 py-2 text-base font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-800">
+                                                {item.label}
+                                            </Link>
+                                        </div>
+                                    </Disclosure.Button>
                                 ))}
                             </div>
-                            <div className="lg:flex hidden items-center justify-end">
-                                <Image
-                                    className="drop-shadow-md h-14 w-44"
-                                    title="Logo CCL"
-                                    src="/logo-ccl-2023.webp"
-                                    alt="logo"
-                                    width={600}
-                                    height={600}
-                                    priority
-                                    loading="lazy"
-                                />
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-            <div className='sticky z-[2000] top-[76px]'>
-                {
-                    isShowing && (
-                        <div className='transform transition-all ease-in-out'>
-                            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-                                <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                                    <li>
-                                        <a href="#" class="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    )
-                }
-            </div>
-        </>
+                        </Disclosure.Panel>
+                    </Transition>
+                </>
+            )}
+        </Disclosure>
     )
 }
