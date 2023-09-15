@@ -42,7 +42,7 @@ export default function Navigation() {
             {({ open }) => (
                 <>
                     <div className="overflow-hidden">
-                        <div className={classNames(scrolling ? "bg-white z-40 transition duration-1000" : "transition duration-1000", "h-[60px] lg:py-0 py-2")}>
+                        <div className={classNames(scrolling ? "bg-white z-40 transition duration-1000 shadow-md" : "transition duration-1000", "h-[60px] lg:py-0 py-2")}>
                             <div className="px-5 max-w-7xl mx-auto flex gap-3 justify-between lg:justify-center items-center h-full w-full">
                                 <div className="visible">
                                     <a className="flex items-center" href="https://natesexport.com/">
@@ -99,7 +99,7 @@ export default function Navigation() {
                         leaveFrom="transform scale-100 opacity-100"
                         leaveTo="transform scale-95 opacity-0"
                     >
-                        <Disclosure.Panel className="sm:hidden bg-white  shadow-md h-screen">
+                        <Disclosure.Panel className="sm:hidden bg-white shadow-md h-screen">
                             <div className="border-t border-gray-200 pt-4 pb-3">
                                 <div className="flex items-center px-4">
                                     <div className="flex-shrink-0">
