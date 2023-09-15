@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useState } from "react"
-import { toast } from 'sonner'
+import { Toaster, toast } from 'sonner'
 
 export default function SendEmail() {
     const [name, setName] = useState("")
@@ -50,6 +50,7 @@ export default function SendEmail() {
     }
     return (
         <div className="w-full mx-auto py-5">
+            <Toaster richColors position="top-center" />
             <form onSubmit={handleSubmit}>
 
                 <div className="py-4">
