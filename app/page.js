@@ -6,13 +6,11 @@ import Slider from '@/components/slider'
 import Footer from '@/components/footer'
 import Preloader from '@/components/preloader'
 import SendEmail from '@/components/email'
-import { Toaster } from 'sonner'
 
 export default function Home() {
 
   return (
     <main className="">
-      <Toaster richColors position="top-center" />
       <video poster="/bg.png" className="absolute z-[-2] h-screen object-cover" autoPlay loop muted>
         <source src="/bg.mp4" type="video/mp4"></source>
         <source src="/bg.webm" type="video/webm"></source>
