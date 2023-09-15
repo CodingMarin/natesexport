@@ -1,8 +1,9 @@
-'use client'
-import { useState } from "react"
+"use client"
+
+import React, { useState } from "react"
 import { toast } from 'sonner'
 
-export default function sendEmail() {
+export default function SendEmail() {
     const [name, setName] = useState("")
     const [phone, setPhone] = useState("")
     const [email, setEmail] = useState("")
