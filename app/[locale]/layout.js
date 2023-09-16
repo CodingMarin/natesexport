@@ -2,7 +2,6 @@ import "../globals.css"
 import { useLocale } from "next-intl"
 import { notFound } from "next/navigation"
 import { Inter } from "@next/font/google"
-import LocalFont from "@next/font/local";
 
 export const metadata = {
   title: {
@@ -48,15 +47,7 @@ export const metadata = {
   author: "Nates Export",
 }
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-})
-
-const calSans = LocalFont({
-  src: "../public/fonts/CalSans-SemiBold.ttf",
-  variable: "--font-calsans",
-})
+const inter = Inter({ subsets: ["latin"] })
 
 export default function RootLayout({ children, params }) {
   const local = useLocale()
@@ -66,11 +57,9 @@ export default function RootLayout({ children, params }) {
     notFound();
   }
   return (
-    <html lang={local} className={[inter.variable, calSans.variable].join("")}>
-      <body
-        className={inter.className} style={{ background: "#fff" }}>
-        <div
-          className="absolute z-[-1] h-screen object-contain w-full opacity-75 bg-gradient-nolinear" />
+    <html lang={local} className={inter.className}>
+      <body className={inter.className} style={{ background: "#fff" }}>
+        <div className="absolute z-[-1] h-screen object-contain w-full opacity-75 bg-gradient-nolinear" />
         {children}
       </body>
     </html>

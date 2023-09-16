@@ -1,5 +1,3 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -17,12 +15,8 @@ module.exports = {
       },
     },
     fontFamily: {
-      nature: ['Nature-Beauty'],
-      sans: ["var(--font-inter)", ...defaultTheme.fontFamily.sans],
-      display: ["var(--font-calsans)"],
+      'nature': ['Nature-Beauty'],
     }
   },
-  plugins: [
-    require("@tailwindcss/typography"),
-  ],
+  plugins: [],
 }
