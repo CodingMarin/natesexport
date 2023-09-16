@@ -1,7 +1,7 @@
 import "../globals.css"
 import { useLocale } from "next-intl"
 import { notFound } from "next/navigation"
-import { Inter } from "@next/font/google"
+import { Inter } from 'next/font/google'
 
 export const metadata = {
   title: {
