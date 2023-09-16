@@ -10,6 +10,13 @@ export const metadata = {
     template: "%s | natesexport.com",
   },
   description: "Somos una empresa dedicada a la distribución de productos agrícolas a nivel nacional e internacional, especializada en hongos deshidratados, aceitunas, cúrcuma, café y orégano.",
+  alternates: {
+    canonical: '/',
+    languages: {
+      'en': '/en',
+      'es': '/es',
+    },
+  },
   openGraph: {
     title: "Nates Export",
     description:
@@ -46,6 +53,10 @@ export const metadata = {
     shortcut: "/favicon.png",
   },
   author: "Nates Export",
+  generator: "Next.js",
+  creator: "Alexander Marin",
+  publisher: "Alexander Marin",
+  metadataBase: new URL('https://natesexport.com'),
 }
 
 
