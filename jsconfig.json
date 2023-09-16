@@ -4,8 +4,8 @@
     "baseUrl": "app/",
     "paths": {
       "@/styles/*": ["styles/*"],
-      "@/components/*": ["components/*"],
-      "@/utils/*": ["utils/*"]
+      "@/components/*": ["[locale]/components/*"],
+      "@/utils/*": ["[locale]/utils/*"]
     }
   }
 }

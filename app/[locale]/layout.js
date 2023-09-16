@@ -1,4 +1,6 @@
 import "../globals.css"
+import { useLocale } from "next-intl"
+import { notFound } from "next/navigation"
 import { Inter } from "@next/font/google"
 import LocalFont from "@next/font/local";
 
@@ -41,7 +43,7 @@ export const metadata = {
     card: "summary_large_image",
   },
   icons: {
-    shortcut: "/favicon.ico",
+    shortcut: "/favicon.png",
   },
   author: "Nates Export",
 }
@@ -56,9 +58,15 @@ const calSans = LocalFont({
   variable: "--font-calsans",
 })
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children, params }) {
+  const local = useLocale()
+  console.log('languages:', params.locale)
+
+  if (params.locale !== locale) {
+    notFound();
+  }
   return (
-    <html lang="es" className={[inter.variable, calSans.variable].join("")}>
+    <html lang={local} className={[inter.variable, calSans.variable].join("")}>
       <body
         className={inter.className} style={{ background: "#fff" }}>
         <div
