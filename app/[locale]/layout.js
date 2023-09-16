@@ -6,16 +6,16 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
   title: {
-    default: "natesexport.com",
+    default: "Nates Export",
     template: "%s | natesexport.com",
   },
   description: "Somos una empresa dedicada a la distribución de productos agrícolas a nivel nacional e internacional, especializada en hongos deshidratados, aceitunas, cúrcuma, café y orégano.",
   openGraph: {
-    title: "natesexport.com",
+    title: "Nates Export",
     description:
       "Somos una empresa dedicada a la distribución de productos agrícolas a nivel nacional e internacional, especializada en hongos deshidratados, aceitunas, cúrcuma, café y orégano.",
-    url: "https://natesexport.com",
-    siteName: "natesexport.com",
+    url: "https://natesexport.com/",
+    siteName: "Nates Export",
     images: [
       {
         url: "https://natesexport.com/bg.png",
@@ -23,7 +23,7 @@ export const metadata = {
         height: 1080,
       },
     ],
-    locale: "en-US",
+    locale: "es",
     type: "website",
   },
   keywords: "Exportación de productos orgánicos, Productos orgánicos a granel, Venta de productos orgánicos, Oregano orgánico ,Cúrcuma orgánica , Café orgánico, Hongo deshidratado orgánico, Aceitunas orgánicas, Proveedor de productos orgánicos, Alimentos orgánicos de calidad, Exportación de alimentos saludables, Suministro de ingredientes orgánicos, Ingredientes naturales para la industria alimentaria, Productos agrícolas orgánicos, Comercio internacional de alimentos orgánicos",
