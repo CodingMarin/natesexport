@@ -45,18 +45,15 @@ export default function Navigation() {
                         <div className={classNames(scrolling ? "bg-white z-40 transition duration-1000 shadow-md" : "transition duration-1000", "h-[60px] lg:py-0 py-2")}>
                             <div className="px-5 max-w-7xl mx-auto flex gap-3 justify-between lg:justify-center items-center h-full w-full">
                                 <div className="visible">
-                                    <a className="flex items-center" href="https://natesexport.com/">
-                                        <Image
-                                            className="drop-shadow-lg w-14"
-                                            title="Nates Export Logo"
-                                            src="/logo_nates_export.svg"
-                                            alt="Logo"
-                                            quality={100}
-                                            width={600}
-                                            height={600}
-                                            loading="lazy"
-                                        />
-                                    </a>
+                                    <Image
+                                        className="drop-shadow-lg w-44"
+                                        title="Nates Export Logo"
+                                        src="/logo_nates_export.svg"
+                                        alt="Logo"
+                                        width={600}
+                                        height={600}
+                                        loading="lazy"
+                                    />
                                 </div>
                                 <div className="-mr-2 flex items-center sm:hidden">
                                     <Disclosure.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-offset-2">
