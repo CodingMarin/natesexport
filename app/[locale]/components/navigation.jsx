@@ -52,8 +52,8 @@ export default function Navigation() {
                                             src="/logo_nates_export.svg"
                                             alt="Logo"
                                             quality={100}
-                                            width={500}
-                                            height={500}
+                                            width={600}
+                                            height={600}
                                             loading="lazy"
                                         />
                                     </a>
