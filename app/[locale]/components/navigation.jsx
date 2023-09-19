@@ -49,7 +49,7 @@ export default function Navigation() {
                                         <Image
                                             className="drop-shadow-lg w-14"
                                             title="Nates Export Logo"
-                                            src="/logo.png"
+                                            src="/logo_nates_export.png"
                                             alt="Logo"
                                             quality={100}
                                             width={500}
