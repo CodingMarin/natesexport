@@ -5,9 +5,58 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title:"Nates Export",
+  title: {
+    default: "Nates Export",
+    template: "%s | natesexport.com",
+  },
   description: "Somos una empresa dedicada a la distribución de productos agrícolas a nivel nacional e internacional, especializada en hongos deshidratados, aceitunas, cúrcuma, café y orégano.",
-  
+  alternates: {
+    canonical: '/',
+    languages: {
+      'es': '/es',
+      'en': '/en',
+    },
+  },
+  openGraph: {
+    title: "Nates Export",
+    description:
+      "Somos una empresa dedicada a la distribución de productos agrícolas a nivel nacional e internacional, especializada en hongos deshidratados, aceitunas, cúrcuma, café y orégano.",
+    url: "https://natesexport.com/",
+    siteName: "Nates Export",
+    images: [
+      {
+        url: "https://natesexport.com/bg.png",
+        width: 1920,
+        height: 1080,
+      },
+    ],
+    locale: "es",
+    type: "website",
+  },
+  keywords: "Exportación de productos orgánicos, Productos orgánicos a granel, Venta de productos orgánicos, Oregano orgánico ,Cúrcuma orgánica , Café orgánico, Hongo deshidratado orgánico, Aceitunas orgánicas, Proveedor de productos orgánicos, Alimentos orgánicos de calidad, Exportación de alimentos saludables, Suministro de ingredientes orgánicos, Ingredientes naturales para la industria alimentaria, Productos agrícolas orgánicos, Comercio internacional de alimentos orgánicos",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  twitter: {
+    title: "Nates Export",
+    card: "summary_large_image",
+  },
+  icons: {
+    shortcut: "/favicon.png",
+  },
+  author: "Nates Export",
+  generator: "Next.js",
+  creator: "Alexander Marin",
+  publisher: "Alexander Marin",
+  metadataBase: new URL('https://natesexport.com'),
 }
 
 export default function LocaleLayout({ children, params }) {
