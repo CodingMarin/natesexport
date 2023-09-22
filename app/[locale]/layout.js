@@ -13,8 +13,8 @@ export const metadata = {
   alternates: {
     canonical: '/',
     languages: {
-      'en': '/en',
       'es': '/es',
+      'en': '/en',
     },
   },
   openGraph: {
@@ -58,7 +58,6 @@ export const metadata = {
   publisher: "Alexander Marin",
   metadataBase: new URL('https://natesexport.com'),
 }
-
 
 export default function LocaleLayout({ children, params }) {
   const locale = useLocale()
