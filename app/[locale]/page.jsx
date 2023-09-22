@@ -1,3 +1,5 @@
+'use client'
+
 import { useTranslations } from "next-intl"
 import Image from 'next/image'
 import Navigation from '@/components/navigation'
