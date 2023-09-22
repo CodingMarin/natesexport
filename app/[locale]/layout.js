@@ -69,6 +69,10 @@ export default function LocaleLayout({ children, params }) {
   }
   return (
     <html lang={locale} className={inter.className}>
+      <head>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1618551591765757"
+          crossorigin="anonymous"></script>
+      </head>
       <body className={inter.className} style={{ background: "#fff" }}>
         <div className="absolute z-[-1] h-screen object-contain w-full opacity-75 bg-gradient-nolinear" />
         {children}
