@@ -8,7 +8,9 @@ import Slider from '@/components/slider'
 import Footer from '@/components/footer'
 import Preloader from '@/components/preloader'
 import SendEmail from '@/components/email'
+import dynamic from 'next/dynamic'
 
+const NoSSR1 = dynamic(() => import('@/components/adbcard'), { ssr: false })
 export default function Home() {
   const translate = useTranslations("Home")
 
@@ -92,6 +94,7 @@ export default function Home() {
             title={'OFRECEMOS CALIDAD'}
             description={'En nuestra búsqueda constante por ofrecer productos superiores, realizamos rigurosas inspecciones de la materia prima que utilizamos. Trabajamos en estrecha colaboración con agricultores y proveedores de confianza para asegurar que nuestras especias y condimentos sean cultivados de manera sostenible y siguiendo prácticas agrícolas responsables. Nuestra inspección minuciosa garantiza la pureza y frescura de nuestros productos.'}
           />
+          <NoSSR1 />
         </div>
         <div className="mx-auto max-w-2xl top-0 inset-0">
           <div className="w-auto h-auto">
