@@ -72,7 +72,7 @@ export default function SendEmail() {
                     <textarea required id="message" rows="4" value={message} onChange={(e) => setMessage(e.target.value)} className="block p-2.5 w-full text-sm text-[#091E42] bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="Escribe tu solicitud aquí..."></textarea>
                 </div>
 
-                <p id="helper-text-explanation" className="mt-2 text-sm text-gray-500">Nunca compartiremos sus datos. Lea nuestro <a href="#" className="font-medium text-blue-600 hover:underline">Política de privacidad</a>.</p>
+                <p id="helper-text-explanation" className="mt-2 text-sm text-gray-500">Nunca compartiremos sus datos. Lea nuestro <a href="/policy" className="font-medium text-blue-600 hover:underline">Política de privacidad</a>.</p>
                 <div className="mt-10">
                     <button className="lg:w-auto w-full transition duration-300  inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-slate-300 rounded-lg group bg-gradient-to-br from-green-400 to-[#00968A] group-hover:from-green-400 group-hover:to-blue-600 hover:text-white focus:outline-none">
                         <span className="select-none relative px-10 py-2.5 transition-all ease-in duration-75 rounded-md group-hover:bg-opacity-0 lg:w-full">
