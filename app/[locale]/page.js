@@ -43,7 +43,6 @@ export default function Home() {
                 quality={100}
                 width={500}
                 height={500}
-                priority
                 loading="lazy"
               />
             </div>
@@ -67,7 +66,6 @@ export default function Home() {
                 quality={100}
                 width={500}
                 height={500}
-                priority
                 loading="lazy"
               />
             </div>
@@ -118,7 +116,6 @@ export default function Home() {
               quality={100}
               width={500}
               height={500}
-              priority
               loading="lazy"
             />
           </div>
@@ -144,7 +141,6 @@ export default function Home() {
               width={500}
               height={500}
               loading="lazy"
-              priority
             />
           </div>
         </div>
