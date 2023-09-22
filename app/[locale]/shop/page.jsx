@@ -1,4 +1,7 @@
 import ShopCard from '@/components/shopcard'
+import dynamic from 'next/dynamic'
+
+const NoSSR = dynamic(() => import('@/components/adbcard'), { ssr: false })
 
 export default function Shop() {
     return (
@@ -30,6 +33,7 @@ export default function Shop() {
                     url={'/shop/product/cafe'}
                 />
             </div>
+            <NoSSR />
         </div>
     )
 }
