@@ -1,8 +1,15 @@
 import "../globals.css"
-import { useLocale } from "next-intl"
+import { NextIntlClientProvider } from "next-intl"
 import { notFound } from "next/navigation"
 import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ["latin"] })
+
+export function generateStaticParams() {
+  return [
+    {locale: 'es'},
+    {locale: 'en'}
+  ]
+}
 
 export const metadata = {
   title: {
@@ -59,18 +66,22 @@ export const metadata = {
   metadataBase: new URL('https://natesexport.com'),
 }
 
-export default function LocaleLayout({ children, params }) {
-  const locale = useLocale()
-  console.log('languages:', params.locale)
+export default async function LocaleLayout({ children, params: { locale } }) {
+  let messages
 
-  if (params.locale !== locale) {
-    notFound();
+  try {
+    messages = (await import(`../../messages/${locale}.json`)).default
+  } catch (error) {
+    notFound()
   }
+
   return (
     <html lang={locale} className={inter.className}>
       <body className={inter.className} style={{ background: "#fff" }}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
         <div className="absolute z-[-1] h-screen object-contain w-full opacity-75 bg-gradient-nolinear" />
         {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   )
