@@ -108,8 +108,8 @@ export default function Navigation() {
                                         </div>
                                     </div>
                                 </div>
-                                {links.map((item) => (
-                                    <Disclosure.Button key={item.id} as="a">
+                                {links.map((item, index) => (
+                                    <Disclosure.Button key={index} as="a">
                                         <div className="mt-3 space-y-1">
                                             <Link href={item.route} className="block px-4 py-2 text-base font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-800">
                                                 {item.label}
