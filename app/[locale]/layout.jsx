@@ -63,7 +63,7 @@ export const metadata = {
   generator: "Next.js",
   creator: "Alexander Marin",
   publisher: "Alexander Marin",
-  metadataBase: new URL('https://natesexport.com'),
+  metadataBase: new URL('https://natesexport.com/es'),
 }
 
 export default async function LocaleLayout({ children, params: { locale } }) {

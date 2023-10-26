@@ -6,7 +6,6 @@ import Navigation from '@/components/navigation'
 import Cardquality from '@/components/cardquality'
 import Slider from '@/components/slider'
 import Footer from '@/components/footer'
-import Preloader from '@/components/preloader'
 import SendEmail from '@/components/email'
 import dynamic from 'next/dynamic'
 
@@ -167,7 +166,6 @@ export default function Home() {
         <SendEmail />
       </div>
       <Footer />
-      <Preloader />
     </main>
   )
 }

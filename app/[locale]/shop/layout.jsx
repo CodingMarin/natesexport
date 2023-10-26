@@ -1,6 +1,5 @@
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
-import Preloader from "@/components/preloader"
 
 import Image from "next/image"
 
@@ -50,7 +49,6 @@ export default function ShopLayout({
                 {children}
             </div>
             <Footer />
-            <Preloader />
         </section>
     )
 }
