@@ -1129,7 +1129,7 @@ export default function Product() {
                 )
                 break
             case 'tentaculos-de-pota':
-                setUrl('/tentaculos-de-pota.webp')
+                setUrl('/Tentaculos-de-pota.webp')
                 setName('Tentaculos de Pota')
                 setDescription("La pota es un producto marino de alta calidad, pescado en las aguas del Océano Pacífico del Perú. Se caracteriza por su sabor auténtico y su textura tierna. Este producto se ha convertido en una opción favorita tanto en el mercado nacional como en el internacional. Nutricionalmente, la Pota es una joya. Es una fuente de proteínas magras de alta calidad, lo que lo convierte en un componente esencial para una dieta saludable y equilibrada. Además, es bajo en grasa y calorías, lo que lo hace adecuado para aquellos que buscan mantener un estilo de vida saludable. La versatilidad culinaria de la Pota lo convierte en un ingrediente versátil en la cocina. Puede ser preparado de diversas maneras, desde parrilla hasta platos gourmet de mariscos. Su textura suave y sabor natural realzan la creatividad culinaria, satisfaciendo los paladares más exigentes. Estamos comprometidos con la sostenibilidad y la preservación de los recursos marinos. Nuestra pesca se lleva a cabo de manera responsable, garantizando la conservación del ecosistema marino. Al elegir nuestro Pota, estás apoyando una pesca ética y sostenible.")
                 setWidget(
