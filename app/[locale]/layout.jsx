@@ -1,5 +1,6 @@
 import "../globals.css"
 import { NextIntlClientProvider } from "next-intl"
+import { Analytics } from '@vercel/analytics/react';
 import { notFound } from "next/navigation"
 import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ["latin"] })
@@ -81,6 +82,7 @@ export default async function LocaleLayout({ children, params: { locale } }) {
         <NextIntlClientProvider locale={locale} messages={messages}>
         <div className="absolute z-[-1] h-screen object-contain w-full opacity-75 bg-gradient-nolinear" />
         {children}
+        <Analytics />
         </NextIntlClientProvider>
       </body>
     </html>
