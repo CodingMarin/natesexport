@@ -63,7 +63,7 @@ export const metadata = {
   generator: "Next.js",
   creator: "Alexander Marin",
   publisher: "Alexander Marin",
-  metadataBase: new URL('https://natesexport.com/es'),
+  metadataBase: new URL('https://natesexport.com'),
 }
 
 export default async function LocaleLayout({ children, params: { locale } }) {
@@ -82,7 +82,6 @@ export default async function LocaleLayout({ children, params: { locale } }) {
         <div className="absolute z-[-1] h-screen object-contain w-full opacity-75 bg-gradient-nolinear" />
         {children}
         </NextIntlClientProvider>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1618551591765757" crossOrigin="anonymous"></script>
       </body>
     </html>
   )

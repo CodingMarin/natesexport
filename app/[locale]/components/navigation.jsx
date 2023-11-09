@@ -68,7 +68,7 @@ export default function Navigation() {
                                 <div className="hidden lg:flex grow items-center mx-auto w-full content-center justify-center gap-3 drop-shadow-lg">
                                     {links.map((link, i) => (
                                         <div key={i} className="relative justify-center cursor-pointer inline-flex items-center space-x-2 text-center font-light ease-out duration-200 outline-none transition-all outline-0 border hover:bg-scale-500 shadow-none border-transparent px-2.5 py-1">
-                                            <Link href={link.route} className="truncate text-white hover:text-slate-300 transition duration-300 text-[0.813rem]">
+                                            <Link href={link.route} replace className="truncate text-white hover:text-slate-300 transition duration-300 text-[0.813rem]">
                                                 {link.label}
                                             </Link>
                                         </div>

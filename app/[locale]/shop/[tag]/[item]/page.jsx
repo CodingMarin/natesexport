@@ -18,7 +18,7 @@ export default function Product() {
     useEffect(() => {
         switch (params.item) {
             case 'oregano':
-                setUrl('/oregano_extra_min.jpg')
+                setUrl('/oregano_extra_min.webp')
                 setName('Oregano Orgánico')
                 setDescription("Descubre la esencia de la tierra fértil de Tacna, Perú, encapsulada en cada fragante hoja de nuestro exquisito orégano. Cultivado con cuidado en los altos valles de la región, nuestro producto representa la perfecta armonía entre el clima soleado y los suelos ricos, resultando en un orégano de sabor y aroma inigualables. Con cada pizca, te transportarás a los campos ondulantes de Tacna.")
                 setWidget(<div className="border w-100 py-2 px-2 my-5 rounded-sm">
@@ -111,7 +111,7 @@ export default function Product() {
                 </div>)
                 break
             case 'curcuma':
-                setUrl('/curcuma_peruana.jpg')
+                setUrl('/curcuma_peruana.webp')
                 setName('Cúrcuma')
                 setDescription("Descubre el alma misma de la tierra peruana en cada brillo dorado de nuestro producto de cúrcuma.Cultivada con pasión y sabiduría ancestral en los mágicos campos de Perú, nuestra cúrcuma encarna la esencia de la naturaleza en su forma más vibrante.Cada raíz es un tesoro de beneficios para la salud, cuidadosamente cosechada y preparada para llevar a tu vida una explosión de sabor y vitalidad.Experimenta el legado de generaciones en cada cucharadita, mientras elevas tus platos y nutres tu cuerpo con la autenticidad única que solo nuestra cúrcuma peruana puede brindar.")
                 setWidget(
@@ -196,7 +196,7 @@ export default function Product() {
                 )
                 break
             case 'aceitunas':
-                setUrl('/aceitunas_peruanas.jpg')
+                setUrl('/aceitunas_peruanas.webp')
                 setName('Aceitunas')
                 setDescription("Sumérgete en la esencia de los campos soleados de Perú con cada bocado de nuestras exquisitas aceitunas. Producidas con dedicación y cuidado en armonía con la naturaleza, nuestras aceitunas capturan la riqueza de la tierra y el clima únicos de la región. Cada fruto es un testimonio de la herencia gastronómica peruana, un equilibrio perfecto entre tradición y calidad. Desde el primer mordisco, te transportarás a los olivares que se mecen suavemente en la brisa costera, ofreciendo una experiencia culinaria que celebra la autenticidad y el sabor incomparable de las aceitunas peruanas.")
                 setWidget(
@@ -309,7 +309,7 @@ export default function Product() {
                 )
                 break
             case 'hongo':
-                setUrl('/hongo_deshidratado_min.jpg')
+                setUrl('/hongo_deshidratado_min.webp')
                 setName('Hongo Deshidratado')
                 setDescription("Nuestros hongos deshidratados, cultivados y cuidadosamente recolectados en las prístinas tierras de Perú, representan la esencia misma de la biodiversidad andina en cada delicada pieza. Con un proceso de deshidratación de vanguardia que conserva su frescura y perfil nutricional, nuestros hongos son el testimonio de la perfección natural que solo se encuentra en los bosques peruanos. Listos para conquistar los paladares internacionales, cada bolsa de nuestros hongos deshidratados es un pasaporte hacia una experiencia gastronómica excepcional, llevando la riqueza de la naturaleza peruana a las mesas de todo el mundo.")
                 setWidget(
@@ -396,7 +396,7 @@ export default function Product() {
                 )
                 break
             case 'cafe':
-                setUrl('/cafe_peruano.jpg')
+                setUrl('/cafe_peruano.webp')
                 setName('Café orgánico')
                 setDescription("El café orgánico peruano es una joya de la agricultura sostenible que cautiva los sentidos de amantes del café en todo el mundo. Nuestra empresa se enorgullece de ofrecer este exquisito café en grano de origen peruano, cultivado con pasión y cuidado en las tierras altas de la región. En los campos de cafetales de Perú, nuestros agricultores trabajan en armonía con la naturaleza, evitando el uso de pesticidas y productos químicos. Esto no solo garantiza la pureza de nuestro café, sino que también respalda la biodiversidad local y las comunidades rurales que dependen de la agricultura. Cada grano de café es cosechado a mano con un cuidado meticuloso, seleccionado y procesado con técnicas tradicionales que preservan su sabor auténtico y característico.")
                 setWidget(
@@ -444,6 +444,856 @@ export default function Product() {
                         <div className="my-5">
                             <h3 className="text-sm uppercase font-semibold">VIDA UTIL DEL CAFÉ</h3>
                             <p className="text-sm text-gray-500">Hasta 1 año, almacenado en mejores condiciones</p>
+                        </div>
+                    </div>
+                )
+                break
+            case 'aleta-de-pota':
+                setUrl('/aleta-de-pota.webp')
+                setName('Aleta de Pota')
+                setDescription("La pota es un producto marino de alta calidad, pescado en las aguas del Océano Pacífico del Perú. Se caracteriza por su sabor auténtico y su textura tierna. Este producto se ha convertido en una opción favorita tanto en el mercado nacional como en el internacional. Nutricionalmente, la Pota es una joya. Es una fuente de proteínas magras de alta calidad, lo que lo convierte en un componente esencial para una dieta saludable y equilibrada. Además, es bajo en grasa y calorías, lo que lo hace adecuado para aquellos que buscan mantener un estilo de vida saludable. La versatilidad culinaria de la Pota lo convierte en un ingrediente versátil en la cocina. Puede ser preparado de diversas maneras, desde parrilla hasta platos gourmet de mariscos. Su textura suave y sabor natural realzan la creatividad culinaria, satisfaciendo los paladares más exigentes. Estamos comprometidos con la sostenibilidad y la preservación de los recursos marinos. Nuestra pesca se lleva a cabo de manera responsable, garantizando la conservación del ecosistema marino. Al elegir nuestro Pota, estás apoyando una pesca ética y sostenible.")
+                setWidget(
+                    <div className="border w-100 py-2 px-2 my-5 rounded-sm">
+                        <div className="pb-5">
+                            <h3 className="text-sm uppercase font-semibold">PRESENTACIÓN DEL PRODUCTO</h3>
+                            <table className="table-fixed text-sm text-gray-500 my-1">
+                                <tbody>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Saco x 20kg - Bloques x 10kg</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">0.1 - 0.3Kg. - <span className="text-blue-400">AZUL </span>Y NEGRO</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">0.3 - 0.5Kg. - <span className="text-blue-400">AZUL </span>Y <span className="text-yellow-300">AMARILLO</span></td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">0.5 - 1Kg. - <span className="text-blue-400">AZUL </span></td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">1 - 2Kg. - <span className="text-blue-400">AZUL </span>Y <span className="text-gray-400">BLANCO</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div className="py-5">
+                            <h3 className="text-sm uppercase font-semibold">CODIFICACIÓN</h3>
+                            <table className="table-fixed text-sm text-gray-500 my-1">
+                                <tbody>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Código</td>
+                                        <td className="border-r px-1">0.1 - 0.3Kg</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Código</td>
+                                        <td className="border-r px-1">0.3 - 0.5Kg</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Código</td>
+                                        <td className="border-r px-1">0.5 - 1Kg</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Código</td>
+                                        <td className="border-r px-1">1 - 2Kg</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div className="">
+                            <h3 className="text-sm uppercase font-semibold">MÉTODO DE PRESERVACIÓN</h3>
+                            <p className="text-sm text-gray-500">•Almacenamiento en cámara a temperatura {'<'} -20ºC</p>
+                        </div>
+                        <div className="my-5">
+                            <h3 className="text-sm uppercase font-semibold">CARACTERÍSTICAS FÍSICAS</h3>
+                            <p className="text-sm text-gray-500">Color: característico</p><br />
+                            <p className="text-sm text-gray-500">Olor: característico</p><br />
+                            <p className="text-sm text-gray-500">Ausencia de quemaduras por el frio</p><br />
+                            <p className="text-sm text-gray-500">Ausencia de materia extraña</p><br />
+                        </div>
+                        <div className="">
+                            <h3 className="text-sm uppercase font-semibold">VALOR NUTRICIONAL</h3>
+                            <table>
+                                <tbody className="text-sm border">
+                                    <tr className="border">
+                                        <td className="border-r">Humedad</td>
+                                        <td>81.1%</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r">Grasa</td>
+                                        <td>1.1%</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r">Proteína</td>
+                                        <td>16.0%</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r">Sales Minerales</td>
+                                        <td>1.7%</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r">Calorías</td>
+                                        <td>101</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div className="my-5">
+                            <h3 className="text-sm uppercase font-semibold">CARACTERÍSTICAS MICROBIOLÓGICAS</h3>
+                            <table className="table-fixed text-sm my-1">
+                                <tbody>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Microorganismos</td>
+                                        <td colSpan={2} className="border-r px-1">Plan de evaluación</td>
+                                        <td colSpan={2} className="border-r px-1">Limites</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Especie/Grupo</td>
+                                        <td className="border-r px-1">n</td>
+                                        <td className="border-r px-1">c</td>
+                                        <td className="border-r px-1">m</td>
+                                        <td className="border-r px-1">M</td>
+                                    </tr>
+                                    <tr className="border text-gray-500">
+                                        <td className="border-r px-1">Aerobios mesófilos (30ºC)</td>
+                                        <td className="border-r px-1">5</td>
+                                        <td className="border-r px-1">2</td>
+                                        <td className="border-r px-1">10<sup>4</sup> UFC/g</td>
+                                        <td className="border-r px-1">10<sup>5</sup> UFC/g</td>
+                                    </tr>
+                                    <tr className="border text-gray-500">
+                                        <td className="border-r px-1">Escherichia coli</td>
+                                        <td className="border-r px-1">5</td>
+                                        <td className="border-r px-1">2</td>
+                                        <td className="border-r px-1">10 UFC/g</td>
+                                        <td className="border-r px-1">10<sup>2</sup> UFC/g</td>
+                                    </tr>
+                                    <tr className="border text-gray-500">
+                                        <td className="border-r px-1">Staphylococcus aureus</td>
+                                        <td className="border-r px-1">5</td>
+                                        <td className="border-r px-1">1</td>
+                                        <td className="border-r px-1">10<sup>2</sup> UFC/g</td>
+                                        <td className="border-r px-1">10<sup>3</sup> UFC/g</td>
+                                    </tr>
+                                    <tr className="border text-gray-500">
+                                        <td className="border-r px-1">Salmonella spp</td>
+                                        <td className="border-r px-1">5</td>
+                                        <td className="border-r px-1">0</td>
+                                        <td className="border-r px-1">Ausencia/25 g</td>
+                                        <td className="border-r px-1">-</td>
+                                    </tr>
+                                    <tr className="border text-gray-500">
+                                        <td className="border-r px-1">Vibrio parahemolyticus</td>
+                                        <td className="border-r px-1">5</td>
+                                        <td className="border-r px-1">0</td>
+                                        <td className="border-r px-1">{'<'} 3 NMP/g</td>
+                                        <td className="border-r px-1">-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <em className="text-xs text-gray-500">Fuente: Manual de indicadores o Criterios de Seguridad Alimentaria e Higiene para Alimentos y Piensos de Origen Pesquero y Acuícola.</em>
+                        </div>
+                        <div className="">
+                            <h3 className="text-sm uppercase font-semibold">CONDICIONES DE ALMACENAMIENTO Y DISTRIBUCIÓN</h3>
+                            <p className="text-sm text-gray-500">El producto terminado es estibado en parihuelas, dentro una cámara de almacenamiento a temperatura {'<= -20º C'}</p>
+                        </div>
+                        <div className="my-5">
+                            <h3 className="text-sm uppercase font-semibold">ETIQUETADO</h3>
+                            <p className="text-sm text-gray-500">Nombre Comercial, Nombre Científico, Peso Neto: Kg/Saco, Zona de pesca (FAO), Origen, Productor, Nº Habilitación de Planta, Fecha de Producción/Congelamiento y Fecha de Expiracíon, Código del Lote.</p>
+                        </div>
+                        <div className="">
+                            <h3 className="text-sm uppercase font-semibold">ALERGENOS</h3>
+                            <p className="text-sm text-gray-500">Moluscos</p>
+                        </div>
+                        <div className="my-5">
+                            <h3 className="text-sm uppercase font-semibold">METODO DE DISTRIBUCIÓN</h3>
+                            <p className="text-sm text-gray-500">Maritima: en contenedores Reefer de 40 pies. Durante el embarque se controla la limpieza e integridad del producto, previniendo que los golpes afecten su integridad.</p>
+                        </div>
+                        <div className="my-5">
+                            <h3 className="text-sm uppercase font-semibold">FORMAS DE CONSUMO Y CONSUMIDORES POTENCIALES</h3>
+                            <p className="text-sm text-gray-500">-Materia Prima para otro alimento.</p><br />
+                            <p className="text-sm text-gray-500">-Consumo Directo (Cocinar antes de Consumir)</p><br />
+                            <p className="text-sm text-gray-500">-{'"'}Mantener a -18ºC{'"'}</p><br />
+                            <p className="text-sm text-gray-500">-{'"'}No congelar una vez descongelado{'"'} Consumo general</p><br />
+                        </div>
+                    </div>
+                )
+                break
+            case 'filete-de-pota':
+                setUrl('/filete-de-pota.webp')
+                setName('Filete de Pota')
+                setDescription("La pota es un producto marino de alta calidad, pescado en las aguas del Océano Pacífico del Perú. Se caracteriza por su sabor auténtico y su textura tierna. Este producto se ha convertido en una opción favorita tanto en el mercado nacional como en el internacional. Nutricionalmente, la Pota es una joya. Es una fuente de proteínas magras de alta calidad, lo que lo convierte en un componente esencial para una dieta saludable y equilibrada. Además, es bajo en grasa y calorías, lo que lo hace adecuado para aquellos que buscan mantener un estilo de vida saludable. La versatilidad culinaria de la Pota lo convierte en un ingrediente versátil en la cocina. Puede ser preparado de diversas maneras, desde parrilla hasta platos gourmet de mariscos. Su textura suave y sabor natural realzan la creatividad culinaria, satisfaciendo los paladares más exigentes. Estamos comprometidos con la sostenibilidad y la preservación de los recursos marinos. Nuestra pesca se lleva a cabo de manera responsable, garantizando la conservación del ecosistema marino. Al elegir nuestro Pota, estás apoyando una pesca ética y sostenible.")
+                setWidget(
+                    <div className="border w-100 py-2 px-2 my-5 rounded-sm">
+                        <div className="pb-5">
+                            <h3 className="text-sm uppercase font-semibold">PRESENTACIÓN DEL PRODUCTO</h3>
+                            <table className="table-fixed text-sm text-gray-500 my-1">
+                                <tbody>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Saco x 20kg - Bloques x 10kg</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">0.1 - 0.3Kg. - <span className="text-blue-400">AZUL </span>Y NEGRO</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">0.3 - 0.5Kg. - <span className="text-blue-400">AZUL </span>Y <span className="text-yellow-300">AMARILLO</span></td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">0.5 - 1Kg. - <span className="text-blue-400">AZUL </span></td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">1 - 2Kg. - <span className="text-blue-400">AZUL </span>Y <span className="text-gray-400">BLANCO</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div className="py-5">
+                            <h3 className="text-sm uppercase font-semibold">CODIFICACIÓN</h3>
+                            <table className="table-fixed text-sm text-gray-500 my-1">
+                                <tbody>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Código</td>
+                                        <td className="border-r px-1">0.1 - 0.3Kg</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Código</td>
+                                        <td className="border-r px-1">0.3 - 0.5Kg</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Código</td>
+                                        <td className="border-r px-1">0.5 - 1Kg</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Código</td>
+                                        <td className="border-r px-1">1 - 2Kg</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div className="">
+                            <h3 className="text-sm uppercase font-semibold">MÉTODO DE PRESERVACIÓN</h3>
+                            <p className="text-sm text-gray-500">•Almacenamiento en cámara a temperatura {'<'} -20ºC</p>
+                        </div>
+                        <div className="py-5">
+                            <h3 className="text-sm uppercase font-semibold">CARACTERÍSTICAS FÍSICAS</h3>
+                            <p className="text-sm text-gray-500">Color: característico</p><br />
+                            <p className="text-sm text-gray-500">Olor: característico</p><br />
+                            <p className="text-sm text-gray-500">Ausencia de quemaduras por el frio</p><br />
+                            <p className="text-sm text-gray-500">Ausencia de materia extraña</p><br />
+                        </div>
+                        <div className="">
+                            <h3 className="text-sm uppercase font-semibold">VALOR NUTRICIONAL</h3>
+                            <table>
+                                <tbody className="text-sm border">
+                                    <tr className="border">
+                                        <td className="border-r">Humedad</td>
+                                        <td>81.1%</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r">Grasa</td>
+                                        <td>1.1%</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r">Proteína</td>
+                                        <td>16.0%</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r">Sales Minerales</td>
+                                        <td>1.7%</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r">Calorías</td>
+                                        <td>101</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div className="my-5">
+                            <h3 className="text-sm uppercase font-semibold">CARACTERÍSTICAS MICROBIOLÓGICAS</h3>
+                            <table className="table-fixed text-sm my-1">
+                                <tbody>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Microorganismos</td>
+                                        <td colSpan={2} className="border-r px-1">Plan de evaluación</td>
+                                        <td colSpan={2} className="border-r px-1">Limites</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Especie/Grupo</td>
+                                        <td className="border-r px-1">n</td>
+                                        <td className="border-r px-1">c</td>
+                                        <td className="border-r px-1">m</td>
+                                        <td className="border-r px-1">M</td>
+                                    </tr>
+                                    <tr className="border text-gray-500">
+                                        <td className="border-r px-1">Aerobios mesófilos (30ºC)</td>
+                                        <td className="border-r px-1">5</td>
+                                        <td className="border-r px-1">2</td>
+                                        <td className="border-r px-1">10<sup>4</sup> UFC/g</td>
+                                        <td className="border-r px-1">10<sup>5</sup> UFC/g</td>
+                                    </tr>
+                                    <tr className="border text-gray-500">
+                                        <td className="border-r px-1">Escherichia coli</td>
+                                        <td className="border-r px-1">5</td>
+                                        <td className="border-r px-1">2</td>
+                                        <td className="border-r px-1">10 UFC/g</td>
+                                        <td className="border-r px-1">10<sup>2</sup> UFC/g</td>
+                                    </tr>
+                                    <tr className="border text-gray-500">
+                                        <td className="border-r px-1">Staphylococcus aureus</td>
+                                        <td className="border-r px-1">5</td>
+                                        <td className="border-r px-1">1</td>
+                                        <td className="border-r px-1">10<sup>2</sup> UFC/g</td>
+                                        <td className="border-r px-1">10<sup>3</sup> UFC/g</td>
+                                    </tr>
+                                    <tr className="border text-gray-500">
+                                        <td className="border-r px-1">Salmonella spp</td>
+                                        <td className="border-r px-1">5</td>
+                                        <td className="border-r px-1">0</td>
+                                        <td className="border-r px-1">Ausencia/25 g</td>
+                                        <td className="border-r px-1">-</td>
+                                    </tr>
+                                    <tr className="border text-gray-500">
+                                        <td className="border-r px-1">Vibrio parahemolyticus</td>
+                                        <td className="border-r px-1">5</td>
+                                        <td className="border-r px-1">0</td>
+                                        <td className="border-r px-1">{'<'} 3 NMP/g</td>
+                                        <td className="border-r px-1">-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <em className="text-xs text-gray-500">Fuente: Manual de indicadores o Criterios de Seguridad Alimentaria e Higiene para Alimentos y Piensos de Origen Pesquero y Acuícola.</em>
+                        </div>
+                        <div className="">
+                            <h3 className="text-sm uppercase font-semibold">CONDICIONES DE ALMACENAMIENTO</h3>
+                            <p className="text-sm text-gray-500">El producto terminado es estibado en parihuelas, dentro una cámara de almacenamiento a temperatura {'<= -20º C'}</p>
+                        </div>
+                        <div className="my-5">
+                            <h3 className="text-sm uppercase font-semibold">ETIQUETADO</h3>
+                            <p className="text-sm text-gray-500">Nombre Comercial, Nombre Científico, Peso Neto: Kg/Saco, Zona de pesca (FAO), Origen, Productor, Nº Habilitación de Planta, Fecha de Producción/Congelamiento y Fecha de Expiracíon, Código del Lote.</p>
+                        </div>
+                        <div className="">
+                            <h3 className="text-sm uppercase font-semibold">ALERGENOS</h3>
+                            <p className="text-sm text-gray-500">Moluscos</p>
+                        </div>
+                        <div className="my-5">
+                            <h3 className="text-sm uppercase font-semibold">METODO DE DISTRIBUCIÓN</h3>
+                            <p className="text-sm text-gray-500">Maritima: en contenedores Reefer de 40 pies. Durante el embarque se controla la limpieza e integridad del producto, previniendo que los golpes afecten su integridad.</p>
+                        </div>
+                        <div className="my-5">
+                            <h3 className="text-sm uppercase font-semibold">FORMAS DE CONSUMO Y CONSUMIDORES POTENCIALES</h3>
+                            <p className="text-sm text-gray-500">-Materia Prima para otro alimento.</p><br />
+                            <p className="text-sm text-gray-500">-Consumo Directo (Cocinar antes de Consumir)</p><br />
+                            <p className="text-sm text-gray-500">-{'"'}Mantener a -18ºC{'"'}</p><br />
+                            <p className="text-sm text-gray-500">-{'"'}No congelar una vez descongelado{'"'} Consumo general</p><br />
+                        </div>
+                    </div>
+                )
+                break
+            case 'nuca-de-pota':
+                setUrl('/nuca-de-pota.webp')
+                setName('Nuca de Pota')
+                setDescription("La pota es un producto marino de alta calidad, pescado en las aguas del Océano Pacífico del Perú. Se caracteriza por su sabor auténtico y su textura tierna. Este producto se ha convertido en una opción favorita tanto en el mercado nacional como en el internacional. Nutricionalmente, la Pota es una joya. Es una fuente de proteínas magras de alta calidad, lo que lo convierte en un componente esencial para una dieta saludable y equilibrada. Además, es bajo en grasa y calorías, lo que lo hace adecuado para aquellos que buscan mantener un estilo de vida saludable. La versatilidad culinaria de la Pota lo convierte en un ingrediente versátil en la cocina. Puede ser preparado de diversas maneras, desde parrilla hasta platos gourmet de mariscos. Su textura suave y sabor natural realzan la creatividad culinaria, satisfaciendo los paladares más exigentes. Estamos comprometidos con la sostenibilidad y la preservación de los recursos marinos. Nuestra pesca se lleva a cabo de manera responsable, garantizando la conservación del ecosistema marino. Al elegir nuestro Pota, estás apoyando una pesca ética y sostenible.")
+                setWidget(
+                    <div className="border w-100 py-2 px-2 my-5 rounded-sm">
+                        <div className="pb-5">
+                            <h3 className="text-sm uppercase font-semibold">PRESENTACIÓN DEL PRODUCTO</h3>
+                            <table className="table-fixed text-sm text-gray-500 my-1">
+                                <tbody>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Saco x 20kg - Bloques x 10kg</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">0.1 - 0.3Kg. - <span className="text-blue-400">AZUL </span>Y NEGRO</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">0.3 - 0.5Kg. - <span className="text-blue-400">AZUL </span>Y <span className="text-yellow-300">AMARILLO</span></td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">0.5 - 1Kg. - <span className="text-blue-400">AZUL </span></td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">1 - 2Kg. - <span className="text-blue-400">AZUL </span>Y <span className="text-gray-400">BLANCO</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div className="py-5">
+                            <h3 className="text-sm uppercase font-semibold">CODIFICACIÓN</h3>
+                            <table className="table-fixed text-sm text-gray-500 my-1">
+                                <tbody>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Código</td>
+                                        <td className="border-r px-1">0.1 - 0.3Kg</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Código</td>
+                                        <td className="border-r px-1">0.3 - 0.5Kg</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Código</td>
+                                        <td className="border-r px-1">0.5 - 1Kg</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Código</td>
+                                        <td className="border-r px-1">1 - 2Kg</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div className="">
+                            <h3 className="text-sm uppercase font-semibold">MÉTODO DE PRESERVACIÓN</h3>
+                            <p className="text-sm text-gray-500">•Almacenamiento en cámara a temperatura {'<'} -20ºC</p>
+                        </div>
+                        <div className="py-5">
+                            <h3 className="text-sm uppercase font-semibold">CARACTERÍSTICAS FÍSICAS</h3>
+                            <p className="text-sm text-gray-500">Color: característico</p><br />
+                            <p className="text-sm text-gray-500">Olor: característico</p><br />
+                            <p className="text-sm text-gray-500">Ausencia de quemaduras por el frio</p><br />
+                            <p className="text-sm text-gray-500">Ausencia de materia extraña</p><br />
+                        </div>
+                        <div className="">
+                            <h3 className="text-sm uppercase font-semibold">VALOR NUTRICIONAL</h3>
+                            <table>
+                                <tbody className="text-sm border">
+                                    <tr className="border">
+                                        <td className="border-r">Humedad</td>
+                                        <td>81.1%</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r">Grasa</td>
+                                        <td>1.1%</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r">Proteína</td>
+                                        <td>16.0%</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r">Sales Minerales</td>
+                                        <td>1.7%</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r">Calorías</td>
+                                        <td>101</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div className="my-5">
+                            <h3 className="text-sm uppercase font-semibold">CARACTERÍSTICAS MICROBIOLÓGICAS</h3>
+                            <table className="table-fixed text-sm my-1">
+                                <tbody>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Microorganismos</td>
+                                        <td colSpan={2} className="border-r px-1">Plan de evaluación</td>
+                                        <td colSpan={2} className="border-r px-1">Limites</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Especie/Grupo</td>
+                                        <td className="border-r px-1">n</td>
+                                        <td className="border-r px-1">c</td>
+                                        <td className="border-r px-1">m</td>
+                                        <td className="border-r px-1">M</td>
+                                    </tr>
+                                    <tr className="border text-gray-500">
+                                        <td className="border-r px-1">Aerobios mesófilos (30ºC)</td>
+                                        <td className="border-r px-1">5</td>
+                                        <td className="border-r px-1">2</td>
+                                        <td className="border-r px-1">10<sup>4</sup> UFC/g</td>
+                                        <td className="border-r px-1">10<sup>5</sup> UFC/g</td>
+                                    </tr>
+                                    <tr className="border text-gray-500">
+                                        <td className="border-r px-1">Escherichia coli</td>
+                                        <td className="border-r px-1">5</td>
+                                        <td className="border-r px-1">2</td>
+                                        <td className="border-r px-1">10 UFC/g</td>
+                                        <td className="border-r px-1">10<sup>2</sup> UFC/g</td>
+                                    </tr>
+                                    <tr className="border text-gray-500">
+                                        <td className="border-r px-1">Staphylococcus aureus</td>
+                                        <td className="border-r px-1">5</td>
+                                        <td className="border-r px-1">1</td>
+                                        <td className="border-r px-1">10<sup>2</sup> UFC/g</td>
+                                        <td className="border-r px-1">10<sup>3</sup> UFC/g</td>
+                                    </tr>
+                                    <tr className="border text-gray-500">
+                                        <td className="border-r px-1">Salmonella spp</td>
+                                        <td className="border-r px-1">5</td>
+                                        <td className="border-r px-1">0</td>
+                                        <td className="border-r px-1">Ausencia/25 g</td>
+                                        <td className="border-r px-1">-</td>
+                                    </tr>
+                                    <tr className="border text-gray-500">
+                                        <td className="border-r px-1">Vibrio parahemolyticus</td>
+                                        <td className="border-r px-1">5</td>
+                                        <td className="border-r px-1">0</td>
+                                        <td className="border-r px-1">{'<'} 3 NMP/g</td>
+                                        <td className="border-r px-1">-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <em className="text-xs text-gray-500">Fuente: Manual de indicadores o Criterios de Seguridad Alimentaria e Higiene para Alimentos y Piensos de Origen Pesquero y Acuícola.</em>
+                        </div>
+                        <div className="">
+                            <h3 className="text-sm uppercase font-semibold">CONDICIONES DE ALMACENAMIENTO</h3>
+                            <p className="text-sm text-gray-500">El producto terminado es estibado en parihuelas, dentro una cámara de almacenamiento a temperatura {'<= -20º C'}</p>
+                        </div>
+                        <div className="my-5">
+                            <h3 className="text-sm uppercase font-semibold">ETIQUETADO</h3>
+                            <p className="text-sm text-gray-500">Nombre Comercial, Nombre Científico, Peso Neto: Kg/Saco, Zona de pesca (FAO), Origen, Productor, Nº Habilitación de Planta, Fecha de Producción/Congelamiento y Fecha de Expiracíon, Código del Lote.</p>
+                        </div>
+                        <div className="">
+                            <h3 className="text-sm uppercase font-semibold">ALERGENOS</h3>
+                            <p className="text-sm text-gray-500">Moluscos</p>
+                        </div>
+                        <div className="my-5">
+                            <h3 className="text-sm uppercase font-semibold">METODO DE DISTRIBUCIÓN</h3>
+                            <p className="text-sm text-gray-500">Maritima: en contenedores Reefer de 40 pies. Durante el embarque se controla la limpieza e integridad del producto, previniendo que los golpes afecten su integridad.</p>
+                        </div>
+                        <div className="my-5">
+                            <h3 className="text-sm uppercase font-semibold">FORMAS DE CONSUMO Y CONSUMIDORES POTENCIALES</h3>
+                            <p className="text-sm text-gray-500">-Materia Prima para otro alimento.</p><br />
+                            <p className="text-sm text-gray-500">-Consumo Directo (Cocinar antes de Consumir)</p><br />
+                            <p className="text-sm text-gray-500">-{'"'}Mantener a -18ºC{'"'}</p><br />
+                            <p className="text-sm text-gray-500">-{'"'}No congelar una vez descongelado{'"'} Consumo general</p><br />
+                        </div>
+                    </div>
+                )
+                break
+            case 'reproductor-de-pota':
+                setUrl('/reproductor-de-pota.webp')
+                setName('Reproductor de Pota')
+                setDescription("La pota es un producto marino de alta calidad, pescado en las aguas del Océano Pacífico del Perú. Se caracteriza por su sabor auténtico y su textura tierna. Este producto se ha convertido en una opción favorita tanto en el mercado nacional como en el internacional. Nutricionalmente, la Pota es una joya. Es una fuente de proteínas magras de alta calidad, lo que lo convierte en un componente esencial para una dieta saludable y equilibrada. Además, es bajo en grasa y calorías, lo que lo hace adecuado para aquellos que buscan mantener un estilo de vida saludable. La versatilidad culinaria de la Pota lo convierte en un ingrediente versátil en la cocina. Puede ser preparado de diversas maneras, desde parrilla hasta platos gourmet de mariscos. Su textura suave y sabor natural realzan la creatividad culinaria, satisfaciendo los paladares más exigentes. Estamos comprometidos con la sostenibilidad y la preservación de los recursos marinos. Nuestra pesca se lleva a cabo de manera responsable, garantizando la conservación del ecosistema marino. Al elegir nuestro Pota, estás apoyando una pesca ética y sostenible.")
+                setWidget(
+                    <div className="border w-100 py-2 px-2 my-5 rounded-sm">
+                        <div className="pb-5">
+                            <h3 className="text-sm uppercase font-semibold">PRESENTACIÓN DEL PRODUCTO</h3>
+                            <table className="table-fixed text-sm text-gray-500 my-1">
+                                <tbody>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Saco x 20kg - Bloques x 10kg</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">0.1 - 0.3Kg. - <span className="text-blue-400">AZUL </span>Y NEGRO</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">0.3 - 0.5Kg. - <span className="text-blue-400">AZUL </span>Y <span className="text-yellow-300">AMARILLO</span></td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">0.5 - 1Kg. - <span className="text-blue-400">AZUL </span></td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">1 - 2Kg. - <span className="text-blue-400">AZUL </span>Y <span className="text-gray-400">BLANCO</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div className="py-5">
+                            <h3 className="text-sm uppercase font-semibold">CODIFICACIÓN</h3>
+                            <table className="table-fixed text-sm text-gray-500 my-1">
+                                <tbody>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Código</td>
+                                        <td className="border-r px-1">0.1 - 0.3Kg</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Código</td>
+                                        <td className="border-r px-1">0.3 - 0.5Kg</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Código</td>
+                                        <td className="border-r px-1">0.5 - 1Kg</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Código</td>
+                                        <td className="border-r px-1">1 - 2Kg</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div className="">
+                            <h3 className="text-sm uppercase font-semibold">MÉTODO DE PRESERVACIÓN</h3>
+                            <p className="text-sm text-gray-500">•Almacenamiento en cámara a temperatura {'<'} -20ºC</p>
+                        </div>
+                        <div className="py-5">
+                            <h3 className="text-sm uppercase font-semibold">CARACTERÍSTICAS FÍSICAS</h3>
+                            <p className="text-sm text-gray-500">Color: característico</p><br />
+                            <p className="text-sm text-gray-500">Olor: característico</p><br />
+                            <p className="text-sm text-gray-500">Ausencia de quemaduras por el frio</p><br />
+                            <p className="text-sm text-gray-500">Ausencia de materia extraña</p><br />
+                        </div>
+                        <div className="">
+                            <h3 className="text-sm uppercase font-semibold">VALOR NUTRICIONAL</h3>
+                            <table>
+                                <tbody className="text-sm border">
+                                    <tr className="border">
+                                        <td className="border-r">Humedad</td>
+                                        <td>81.1%</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r">Grasa</td>
+                                        <td>1.1%</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r">Proteína</td>
+                                        <td>16.0%</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r">Sales Minerales</td>
+                                        <td>1.7%</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r">Calorías</td>
+                                        <td>101</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div className="my-5">
+                            <h3 className="text-sm uppercase font-semibold">CARACTERÍSTICAS MICROBIOLÓGICAS</h3>
+                            <table className="table-fixed text-sm my-1">
+                                <tbody>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Microorganismos</td>
+                                        <td colSpan={2} className="border-r px-1">Plan de evaluación</td>
+                                        <td colSpan={2} className="border-r px-1">Limites</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Especie/Grupo</td>
+                                        <td className="border-r px-1">n</td>
+                                        <td className="border-r px-1">c</td>
+                                        <td className="border-r px-1">m</td>
+                                        <td className="border-r px-1">M</td>
+                                    </tr>
+                                    <tr className="border text-gray-500">
+                                        <td className="border-r px-1">Aerobios mesófilos (30ºC)</td>
+                                        <td className="border-r px-1">5</td>
+                                        <td className="border-r px-1">2</td>
+                                        <td className="border-r px-1">10<sup>4</sup> UFC/g</td>
+                                        <td className="border-r px-1">10<sup>5</sup> UFC/g</td>
+                                    </tr>
+                                    <tr className="border text-gray-500">
+                                        <td className="border-r px-1">Escherichia coli</td>
+                                        <td className="border-r px-1">5</td>
+                                        <td className="border-r px-1">2</td>
+                                        <td className="border-r px-1">10 UFC/g</td>
+                                        <td className="border-r px-1">10<sup>2</sup> UFC/g</td>
+                                    </tr>
+                                    <tr className="border text-gray-500">
+                                        <td className="border-r px-1">Staphylococcus aureus</td>
+                                        <td className="border-r px-1">5</td>
+                                        <td className="border-r px-1">1</td>
+                                        <td className="border-r px-1">10<sup>2</sup> UFC/g</td>
+                                        <td className="border-r px-1">10<sup>3</sup> UFC/g</td>
+                                    </tr>
+                                    <tr className="border text-gray-500">
+                                        <td className="border-r px-1">Salmonella spp</td>
+                                        <td className="border-r px-1">5</td>
+                                        <td className="border-r px-1">0</td>
+                                        <td className="border-r px-1">Ausencia/25 g</td>
+                                        <td className="border-r px-1">-</td>
+                                    </tr>
+                                    <tr className="border text-gray-500">
+                                        <td className="border-r px-1">Vibrio parahemolyticus</td>
+                                        <td className="border-r px-1">5</td>
+                                        <td className="border-r px-1">0</td>
+                                        <td className="border-r px-1">{'<'} 3 NMP/g</td>
+                                        <td className="border-r px-1">-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <em className="text-xs text-gray-500">Fuente: Manual de indicadores o Criterios de Seguridad Alimentaria e Higiene para Alimentos y Piensos de Origen Pesquero y Acuícola.</em>
+                        </div>
+                        <div className="">
+                            <h3 className="text-sm uppercase font-semibold">CONDICIONES DE ALMACENAMIENTO</h3>
+                            <p className="text-sm text-gray-500">El producto terminado es estibado en parihuelas, dentro una cámara de almacenamiento a temperatura {'<= -20º C'}</p>
+                        </div>
+                        <div className="my-5">
+                            <h3 className="text-sm uppercase font-semibold">ETIQUETADO</h3>
+                            <p className="text-sm text-gray-500">Nombre Comercial, Nombre Científico, Peso Neto: Kg/Saco, Zona de pesca (FAO), Origen, Productor, Nº Habilitación de Planta, Fecha de Producción/Congelamiento y Fecha de Expiracíon, Código del Lote.</p>
+                        </div>
+                        <div className="">
+                            <h3 className="text-sm uppercase font-semibold">ALERGENOS</h3>
+                            <p className="text-sm text-gray-500">Moluscos</p>
+                        </div>
+                        <div className="my-5">
+                            <h3 className="text-sm uppercase font-semibold">METODO DE DISTRIBUCIÓN</h3>
+                            <p className="text-sm text-gray-500">Maritima: en contenedores Reefer de 40 pies. Durante el embarque se controla la limpieza e integridad del producto, previniendo que los golpes afecten su integridad.</p>
+                        </div>
+                        <div className="my-5">
+                            <h3 className="text-sm uppercase font-semibold">FORMAS DE CONSUMO Y CONSUMIDORES POTENCIALES</h3>
+                            <p className="text-sm text-gray-500">-Materia Prima para otro alimento.</p><br />
+                            <p className="text-sm text-gray-500">-Consumo Directo (Cocinar antes de Consumir)</p><br />
+                            <p className="text-sm text-gray-500">-{'"'}Mantener a -18ºC{'"'}</p><br />
+                            <p className="text-sm text-gray-500">-{'"'}No congelar una vez descongelado{'"'} Consumo general</p><br />
+                        </div>
+                    </div>
+                )
+                break
+            case 'tentaculos-de-pota':
+                setUrl('/tentaculos-de-pota.webp')
+                setName('Tentaculos de Pota')
+                setDescription("La pota es un producto marino de alta calidad, pescado en las aguas del Océano Pacífico del Perú. Se caracteriza por su sabor auténtico y su textura tierna. Este producto se ha convertido en una opción favorita tanto en el mercado nacional como en el internacional. Nutricionalmente, la Pota es una joya. Es una fuente de proteínas magras de alta calidad, lo que lo convierte en un componente esencial para una dieta saludable y equilibrada. Además, es bajo en grasa y calorías, lo que lo hace adecuado para aquellos que buscan mantener un estilo de vida saludable. La versatilidad culinaria de la Pota lo convierte en un ingrediente versátil en la cocina. Puede ser preparado de diversas maneras, desde parrilla hasta platos gourmet de mariscos. Su textura suave y sabor natural realzan la creatividad culinaria, satisfaciendo los paladares más exigentes. Estamos comprometidos con la sostenibilidad y la preservación de los recursos marinos. Nuestra pesca se lleva a cabo de manera responsable, garantizando la conservación del ecosistema marino. Al elegir nuestro Pota, estás apoyando una pesca ética y sostenible.")
+                setWidget(
+                    <div className="border w-100 py-2 px-2 my-5 rounded-sm">
+                        <div className="pb-5">
+                            <h3 className="text-sm uppercase font-semibold">PRESENTACIÓN DEL PRODUCTO</h3>
+                            <table className="table-fixed text-sm text-gray-500 my-1">
+                                <tbody>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Saco x 20kg - Bloques x 10kg</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">0.1 - 0.3Kg. - <span className="text-blue-400">AZUL </span>Y NEGRO</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">0.3 - 0.5Kg. - <span className="text-blue-400">AZUL </span>Y <span className="text-yellow-300">AMARILLO</span></td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">0.5 - 1Kg. - <span className="text-blue-400">AZUL </span></td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">1 - 2Kg. - <span className="text-blue-400">AZUL </span>Y <span className="text-gray-400">BLANCO</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div className="py-5">
+                            <h3 className="text-sm uppercase font-semibold">CODIFICACIÓN</h3>
+                            <table className="table-fixed text-sm text-gray-500 my-1">
+                                <tbody>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Código</td>
+                                        <td className="border-r px-1">0.1 - 0.3Kg</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Código</td>
+                                        <td className="border-r px-1">0.3 - 0.5Kg</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Código</td>
+                                        <td className="border-r px-1">0.5 - 1Kg</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Código</td>
+                                        <td className="border-r px-1">1 - 2Kg</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div className="">
+                            <h3 className="text-sm uppercase font-semibold">MÉTODO DE PRESERVACIÓN</h3>
+                            <p className="text-sm text-gray-500">•Almacenamiento en cámara a temperatura {'<'} -20ºC</p>
+                        </div>
+                        <div className="py-5">
+                            <h3 className="text-sm uppercase font-semibold">CARACTERÍSTICAS FÍSICAS</h3>
+                            <p className="text-sm text-gray-500">Color: característico</p><br />
+                            <p className="text-sm text-gray-500">Olor: característico</p><br />
+                            <p className="text-sm text-gray-500">Ausencia de quemaduras por el frio</p><br />
+                            <p className="text-sm text-gray-500">Ausencia de materia extraña</p><br />
+                        </div>
+                        <div className="">
+                            <h3 className="text-sm uppercase font-semibold">VALOR NUTRICIONAL</h3>
+                            <table>
+                                <tbody className="text-sm border">
+                                    <tr className="border">
+                                        <td className="border-r">Humedad</td>
+                                        <td>81.1%</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r">Grasa</td>
+                                        <td>1.1%</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r">Proteína</td>
+                                        <td>16.0%</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r">Sales Minerales</td>
+                                        <td>1.7%</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r">Calorías</td>
+                                        <td>101</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div className="my-5">
+                            <h3 className="text-sm uppercase font-semibold">CARACTERÍSTICAS MICROBIOLÓGICAS</h3>
+                            <table className="table-fixed text-sm my-1">
+                                <tbody>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Microorganismos</td>
+                                        <td colSpan={2} className="border-r px-1">Plan de evaluación</td>
+                                        <td colSpan={2} className="border-r px-1">Limites</td>
+                                    </tr>
+                                    <tr className="border">
+                                        <td className="border-r px-1">Especie/Grupo</td>
+                                        <td className="border-r px-1">n</td>
+                                        <td className="border-r px-1">c</td>
+                                        <td className="border-r px-1">m</td>
+                                        <td className="border-r px-1">M</td>
+                                    </tr>
+                                    <tr className="border text-gray-500">
+                                        <td className="border-r px-1">Aerobios mesófilos (30ºC)</td>
+                                        <td className="border-r px-1">5</td>
+                                        <td className="border-r px-1">2</td>
+                                        <td className="border-r px-1">10<sup>4</sup> UFC/g</td>
+                                        <td className="border-r px-1">10<sup>5</sup> UFC/g</td>
+                                    </tr>
+                                    <tr className="border text-gray-500">
+                                        <td className="border-r px-1">Escherichia coli</td>
+                                        <td className="border-r px-1">5</td>
+                                        <td className="border-r px-1">2</td>
+                                        <td className="border-r px-1">10 UFC/g</td>
+                                        <td className="border-r px-1">10<sup>2</sup> UFC/g</td>
+                                    </tr>
+                                    <tr className="border text-gray-500">
+                                        <td className="border-r px-1">Staphylococcus aureus</td>
+                                        <td className="border-r px-1">5</td>
+                                        <td className="border-r px-1">1</td>
+                                        <td className="border-r px-1">10<sup>2</sup> UFC/g</td>
+                                        <td className="border-r px-1">10<sup>3</sup> UFC/g</td>
+                                    </tr>
+                                    <tr className="border text-gray-500">
+                                        <td className="border-r px-1">Salmonella spp</td>
+                                        <td className="border-r px-1">5</td>
+                                        <td className="border-r px-1">0</td>
+                                        <td className="border-r px-1">Ausencia/25 g</td>
+                                        <td className="border-r px-1">-</td>
+                                    </tr>
+                                    <tr className="border text-gray-500">
+                                        <td className="border-r px-1">Vibrio parahemolyticus</td>
+                                        <td className="border-r px-1">5</td>
+                                        <td className="border-r px-1">0</td>
+                                        <td className="border-r px-1">{'<'} 3 NMP/g</td>
+                                        <td className="border-r px-1">-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <em className="text-xs text-gray-500">Fuente: Manual de indicadores o Criterios de Seguridad Alimentaria e Higiene para Alimentos y Piensos de Origen Pesquero y Acuícola.</em>
+                        </div>
+                        <div className="">
+                            <h3 className="text-sm uppercase font-semibold">CONDICIONES DE ALMACENAMIENTO</h3>
+                            <p className="text-sm text-gray-500">El producto terminado es estibado en parihuelas, dentro una cámara de almacenamiento a temperatura {'<= -20º C'}</p>
+                        </div>
+                        <div className="my-5">
+                            <h3 className="text-sm uppercase font-semibold">ETIQUETADO</h3>
+                            <p className="text-sm text-gray-500">Nombre Comercial, Nombre Científico, Peso Neto: Kg/Saco, Zona de pesca (FAO), Origen, Productor, Nº Habilitación de Planta, Fecha de Producción/Congelamiento y Fecha de Expiracíon, Código del Lote.</p>
+                        </div>
+                        <div className="">
+                            <h3 className="text-sm uppercase font-semibold">ALERGENOS</h3>
+                            <p className="text-sm text-gray-500">Moluscos</p>
+                        </div>
+                        <div className="my-5">
+                            <h3 className="text-sm uppercase font-semibold">METODO DE DISTRIBUCIÓN</h3>
+                            <p className="text-sm text-gray-500">Maritima: en contenedores Reefer de 40 pies. Durante el embarque se controla la limpieza e integridad del producto, previniendo que los golpes afecten su integridad.</p>
+                        </div>
+                        <div className="my-5">
+                            <h3 className="text-sm uppercase font-semibold">FORMAS DE CONSUMO Y CONSUMIDORES POTENCIALES</h3>
+                            <p className="text-sm text-gray-500">-Materia Prima para otro alimento.</p><br />
+                            <p className="text-sm text-gray-500">-Consumo Directo (Cocinar antes de Consumir)</p><br />
+                            <p className="text-sm text-gray-500">-{'"'}Mantener a -18ºC{'"'}</p><br />
+                            <p className="text-sm text-gray-500">-{'"'}No congelar una vez descongelado{'"'} Consumo general</p><br />
                         </div>
                     </div>
                 )

@@ -7,15 +7,16 @@ import Cardquality from '@/components/cardquality'
 import Slider from '@/components/slider'
 import Footer from '@/components/footer'
 import SendEmail from '@/components/email'
-import dynamic from 'next/dynamic'
+import { useRouter } from "next/navigation"
 
-const NoSSR1 = dynamic(() => import('@/components/adbcard'), { ssr: false })
+
 export default function Home() {
   const translate = useTranslations("Home")
+  const router = useRouter()
 
   return (
     <main className="">
-      <video poster="/bg.png" className="absolute z-[-2] h-screen object-cover" autoPlay loop muted>
+      <video poster="/bg.webp" className="absolute z-[-2] h-screen object-cover" autoPlay loop muted>
         <source src="/bg.mp4" type="video/mp4"></source>
         <source src="/bg.webm" type="video/webm"></source>
       </video>
@@ -26,11 +27,11 @@ export default function Home() {
             <h1 className="select-none text-6xl leading-snug font-bold tracking-normal text-slate-100 sm:text-7xl sm:leading-none font-nature my-4 drop-shadow-2xl">{translate('title')}</h1>
             <h2 className="mt-6 text-sm text-slate-100 lg:px-0 px-4" style={{ textShadow: '1px 1px rgba(0,0,0,0.3)' }}>{translate('description')}</h2>
             <div className="mt-10">
-              <a href="/shop" className="transition duration-300 relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-slate-300 rounded-lg group bg-gradient-to-br from-green-400 to-[#00968A] group-hover:from-green-400 group-hover:to-blue-600 hover:text-white focus:outline-none">
-                <span className="select-none relative px-5 py-2.5 transition-all ease-in duration-75 rounded-md group-hover:bg-opacity-0">
+              <button onClick={() => router.push('/shop')} className="transition duration-300 relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-white rounded-lg group bg-gradient-to-br from-green-400 to-[#00968A] group-hover:from-green-400 group-hover:to-blue-600 hover:text-slate-200 focus:outline-none">
+                <span className="select-none relative px-10 py-2.5 transition-all ease-in duration-75 rounded-md group-hover:bg-opacity-0">
                   {translate('buy-now')}
                 </span>
-              </a>
+              </button>
             </div>
           </div>
         </div>
@@ -63,7 +64,7 @@ export default function Home() {
           <div className="flex justify-center ">
             <div className="w-60 h-auto">
               <Image
-                src="/calidad_natural.png"
+                src="/calidad_natural.webp"
                 title="Calidad natural"
                 alt="Picture of the author"
                 quality={100}
@@ -79,26 +80,25 @@ export default function Home() {
         </div>
         <div className="pt-10 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-5xl sm:mx-auto mx-auto w-full justify-center gap-y-3 gap-x-10">
           <Cardquality
-            url={'/value_work.png'}
+            url={'/value_work.webp'}
             title={'VALORAMOS EL TRABAJO DE CAMPO'}
             description={'En cada etapa de producción, valoramos el trabajo de campo realizado por agricultores locales. Nos enorgullece apoyar y reconocer su arduo trabajo, asegurándonos de que reciban un trato justo y digno. Al valorar y fomentar la calidad en el trabajo de campo, podemos ofrecer especias y condimentos de excelencia, cultivados con pasión y dedicación. Descubre la historia detrás de nuestros productos y el impacto positivo que generamos en las comunidades agrícolas.'}
           />
           <Cardquality
-            url={'/export_safety.png'}
+            url={'/export_safety.webp'}
             title={'EXPORTACIÓN SEGURA'}
             description={'En nuestra, nuestro compromiso es llevar los sabores auténticos de Perú al mundo, garantizando que cada especia y condimento cumpla con los estándares internacionales de calidad.'}
           />
           <Cardquality
-            url={'/materia_prima.png'}
+            url={'/materia_prima.webp'}
             title={'OFRECEMOS CALIDAD'}
             description={'En nuestra búsqueda constante por ofrecer productos superiores, realizamos rigurosas inspecciones de la materia prima que utilizamos. Trabajamos en estrecha colaboración con agricultores y proveedores de confianza para asegurar que nuestras especias y condimentos sean cultivados de manera sostenible y siguiendo prácticas agrícolas responsables. Nuestra inspección minuciosa garantiza la pureza y frescura de nuestros productos.'}
           />
-          <NoSSR1 />
         </div>
         <div className="mx-auto max-w-2xl top-0 inset-0">
           <div className="w-auto h-auto">
             <Image
-              src="/camp_cosechando.png"
+              src="/camp_cosechando.webp"
               alt="Picture of the author"
               quality={100}
               width={500}
