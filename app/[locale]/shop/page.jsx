@@ -73,7 +73,7 @@ export default function Shop() {
                 id: 1,
                 name: "Tentaculos de Pota",
                 url: "/shop/product/tentaculos-de-pota",
-                img: "Tentaculos-de-pota",
+                img: "tentaculos-de-pota",
             },
         ],
         Consumo: [
