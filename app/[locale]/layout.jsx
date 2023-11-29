@@ -4,6 +4,7 @@ import { Analytics } from '@vercel/analytics/react';
 import { notFound } from "next/navigation"
 import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ["latin"] })
+import Script from 'next/script';
 
 export function generateStaticParams() {
   return [
@@ -78,6 +79,16 @@ export default async function LocaleLayout({ children, params: { locale } }) {
 
   return (
     <html lang={locale} className={inter.className}>
+     <Script src="https://www.googletagmanager.com/gtag/js?id=G-08N2PGJWQN" />
+      <Script id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-08N2PGJWQN');
+        `}
+      </Script>
       <body className={inter.className} style={{ background: "#fff" }}>
         <NextIntlClientProvider locale={locale} messages={messages}>
         <div className="absolute z-[-1] h-screen object-contain w-full opacity-75 bg-gradient-nolinear" />

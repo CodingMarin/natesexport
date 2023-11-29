@@ -44,7 +44,7 @@ export default function Shop() {
                 img: "cafe_peruano",
             }
         ],
-        Hidrobológico: [
+        Hidrobiológico: [
             {
                 id: 1,
                 name: "Aleta de Pota",
